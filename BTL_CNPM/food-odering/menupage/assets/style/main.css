@@ -1,0 +1,141 @@
+.btn__close{
+    display: none;
+}
+.menu{
+
+}
+.menu__title{
+    font-size: 20px;
+    color: var(--gray-color);
+    background-color: #fff;
+    padding: 20px;
+    font-weight: bold;
+}
+.menu__cart{
+    display: none;
+}
+.menu__content{
+    background-color: #f8f8f8;
+}
+.menu__content .tab-pane{
+    animation: fadeIn ease-in 0.4s;
+    transform-origin: top left;
+}
+.menu__nav-item{
+    margin-right: 10px;
+}
+.menu__nav-item a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu__nav-item img{
+    width: 80px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.menu__content{
+    margin: 20px 20px;
+}
+.menu__content .row{
+    margin: 20px 0;
+}
+.menu__content-item{
+    max-height: 400px;
+}
+.menu__content-item img{
+    width: 100%;
+   height: 100%; 
+   margin: auto;
+}
+.menu__content-item-buy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--red-color);
+}
+/* Cart */
+.cart{
+    position: fixed;
+    right: 0;
+    top:0;
+    border: 2px solid #f8f8f8; 
+}
+.cart__title{
+    font-size: 20px;
+    color: var(--red-color);
+    background-color: #fff;
+    padding: 20px;
+    font-weight: bold;
+}
+.cart__content{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;     
+}
+.cart__top{
+    border: 2px solid #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 70vh;
+}
+.cart__item{
+    display: flex;
+    border: 2px solid #f8f8f8;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart__item-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    margin: 10px;
+}
+.cart__item-quality{
+    display: flex;
+    flex-direction: column;
+}
+.cart__item-quality-title{
+    font-weight: 700;
+}
+.cart__item-quality-count{
+    display: flex;
+    justify-content: space-between;
+}
+.cart__item-quality-number{
+    margin: 0 10px;
+}
+.btn-add, 
+.btn-minus{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.cart__item-cost{
+    color: var(--red-color);
+    font-weight: 500;
+    margin-right: 10px;
+}
+.cart__total{
+    display: flex;
+    justify-content: space-between;
+}
+.cart__total h4{
+    margin-left: 20px;
+}
+.cart__total-cost{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--red-color);
+    margin-right: 30px;
+}
+.cart__payment{
+    width: 100%;
+}
+.cart__bottom{
+    margin-bottom: 30px;
+}
+/* Modal Cart */

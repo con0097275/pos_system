@@ -1,0 +1,12 @@
+:root{
+    --red-color: #f80000;
+    --gray-color: #2c3a57;
+}
+@keyframes fadeIn {
+    from {
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
