@@ -1,0 +1,36 @@
+/* Tablet*/
+@media (max-width: 576px) {
+    .menu__content-item{
+        margin-bottom: 20px;
+    }
+    .menu__content-item-buy{
+        flex-flow: wrap;
+        text-align: center;
+    }
+    .menu__nav-item{
+        margin: 0;
+    }
+    .card-title{
+        width: 100%;
+        text-align: center;
+    }
+    .menu__content-item-buy a{
+        width: 100%;
+        padding: 5px 0;
+        font-size: 17px;
+
+    }
+    .menu__content-item-buy h6{
+        font-size: 18px;
+        width: 100%;
+    }
+    /* Cart */
+    .cart{
+        position: fixed !important;
+        background-color: white;
+        top: 55px;
+        z-index: 10;
+        display: none;
+    }
+}
+
