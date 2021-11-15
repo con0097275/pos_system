@@ -1,10 +1,16 @@
-function showCart(){
-    document.getElementById('cart').style.display='block';
-    document.getElementById('cart').style.zIndex='3';
-    document.getElementById('btnClose').style.display='block';
-}
-function closeCart(){
-    document.getElementById('cart').style.display='none';
-    document.getElementById('cart').style.zIndex='1';
-    document.getElementById('btnClose').style.display='none';
-}
+$(document).ready(function () {
+    var openCart= false;
+    $('#btn-cart').click(function (e) { 
+        e.preventDefault();
+        if (!openCart) {
+            $('.cart').fadeIn(1000);
+            openCart=true;
+            $('#btn-cart').text('Đóng giỏ hàng');
+        } else{
+            openCart=false;
+            $('.cart').fadeOut(1000);
+            $('#btn-cart').text('Mở giỏ hàng');
+        }
+    });
+    
+});
