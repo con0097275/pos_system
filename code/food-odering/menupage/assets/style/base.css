@@ -1,5 +1,5 @@
 :root{
-    --red-color: #f80000;
+    --red-color: #E40B06;
     --gray-color: #2c3a57;
 }
 @keyframes fadeIn {
@@ -9,4 +9,7 @@
     to{
         transform: scale(1);
     }
+}
+*{
+    font-family: 'Source Sans Pro', sans-serif;
 }
