@@ -6,8 +6,6 @@
     $email=$phone=$cpassword=$password=$name="";
     $login=1;
 ?>
-
-
 <?php 
 //<!--escape special string-->
 function test_input($data) {
@@ -17,8 +15,6 @@ function test_input($data) {
   return $data;
 }
 ?>
-
-
 <?php
 //<!--check dang ki tai khoan::-->
 if (isset($_POST['submit_dki'])) {
@@ -41,10 +37,9 @@ if (isset($_POST['submit_dki'])) {
         } else if (strlen($password)<8) {
             $passErr_dk="<p>Your password must be at least 8 characters. Try again. </p>";
         } else if ($password != $cpassword){
-            $cpassErr_dk ="<p>Your retype password do not match. Try agin.</p>";
+            $cpassErr_dk ="<p>Your retype password did not match. Try agin.</p>";
         } else {
             //form is valid
-
             //connect to the database
             require '../requirefile/connect.php';
 
@@ -76,26 +71,27 @@ if (isset($_POST['submit_dki'])) {
                         . "VALUES('$email','$password','$vkey')");
                 $insertTVcoTK=$conn->query("INSERT INTO tvcotk (idTK,idTV) VALUES ((SELECT MAX(id_taikhoan) FROM taikhoan)"
                         . ",(SELECT MAX(idTV) FROM thanhvien))");
-
+                
                 if ($insertTK && $insertTV && $insertTVcoTK) {
                     //send email:
                     $to=$email;
                     $subject = "Email Verification APP POS";
 
                     //note to update:
-                    $message = "<h1>click here to verify your account in POS SYSTEM: <h1><br>"
-                      . "<a href='http://localhost/tutorial/NetBeans/BTL_CNPM/login/verify_account.php?vkey=$vkey'> Trigger Account </a>";
+                    $message = "<h1>click vào đây để kích hoạt tài khoản tại RYAN POS SYSTEM: <h1><br>"
+                      . "<a href='http://localhost/tutorial/NetBeans/RYAN%20RESTAURANT/login/verify_account.php?vkey=$vkey'> LINK KÍCH HOẠT </a>";
                     $headers = "From: noreply.ryanstore@gmail.com";
-                    $headers .= "MIME-Version: RYAN STORE\r\n";             //MỚI
+                    $headers .= "MIME-Version: RYAN RESTAURANT\r\n";             //MỚI
                     $headers .= "Content-type: text/html\r\n";
                     //$headers .= "Content-type:text/html;charset=UTF-8"."\r\n";
 
                     mail($to, $subject, $message,$headers);
-                    //header("Location:tks_signup.php");
+                    
+                    header("Location:tks_signup.php?email=$email");
                     
                     //alert sign up sucessfully:
-                    $message = "ĐĂNG KÍ THÀNH CÔNG.VUI LÒNG KIỂM TRA GMAIL $email ĐỂ KÍCH HOẠT TÀI KHOẢN...";
-                    echo "<script type='text/javascript'>alert('$message');window.location.href='login.php';</script>";
+                    // $message = "ĐĂNG KÍ THÀNH CÔNG.VUI LÒNG KIỂM TRA GMAIL $email ĐỂ KÍCH HOẠT TÀI KHOẢN...";
+                    // echo "<script type='text/javascript'>alert('$message');window.location.href='login.php';</script>";
                 } else {
                     echo $conn->error;
                 }
@@ -129,14 +125,13 @@ if (isset($_POST['submit_dki'])) {
 //<!--check dang nhap tai khoan::-->
 if (isset($_POST['submit_dn'])) {
     $login=1;
-    // if the account and password user entered had complete: 
+    // if the account and password user entered had complete:
     if (!empty($_POST['em']) && !empty($_POST['pw'])) {
         //connect to the database:
         require '../requirefile/connect.php';
         //escape specical string from input data:
         $em=test_input($_POST['em']);
         $pw= test_input($_POST['pw']);
-
 
         //Get data:
         $em = $conn->real_escape_string($em);
@@ -168,13 +163,16 @@ if (isset($_POST['submit_dn'])) {
                     $_SESSION["tenthanhvien"]=$tv['Hoten'];
                     $_SESSION["sdt"]=$tv['sdt'];
                     $_SESSION["idtv"]=$tv['idTV'];
-                    echo $tv['Hoten'] ."\n".$tv['sdt'] ."\n".$tv['idTV'];
+                    // echo $tv['Hoten'] ."\n".$tv['sdt'] ."\n".$tv['idTV'];
+
+                    // quay ve trang chu
+                    header("Location:../HomePage");
 
                 } else {
                     $emailErr_dn = "This account has not been yet verified. An email was sent to $email on $date";
                 }
             } else {
-                $passErr_dn = "The password you entered is incorrect. Try again.";
+                $passErr_dn = "Incorrect Password. Try again.";
             }
         } else {
             //invalid credentials:
