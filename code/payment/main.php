@@ -9,11 +9,11 @@ function callbackPage() {
 
 }
 
-let products = [
+let products = [    
     <?php foreach($cart as $i): ?>        
         {
             id: <?php echo $i['MaMonAn'] ?>,
-            name: <?php echo $i['TenMonAn']?>,
+            name: <?php echo "'" . $i['TenMonAn'] . "'"?>,
             price: <?php echo $i['giaTien']?>,
             quantity: <?php echo $i['num'] ?>,
         },
@@ -106,11 +106,12 @@ function updateTotal(arr) {
             total_quantity += p.quantity;
             sub_total_price += p.price * p.quantity;
         };
+        let tax = parseInt(sub_total_price* 0.1);
         document.getElementById('total-quantity').innerHTML = total_quantity;
         document.getElementById('subtotal-price').innerHTML = displayNumber(sub_total_price);
-        document.getElementById('tax').innerHTML = displayNumber(sub_total_price * 0.1);
+        document.getElementById('tax').innerHTML = displayNumber(tax);
         document.getElementById('ship-price').innerHTML = "20.000";
-        document.getElementById('total-bill').innerHTML = displayNumber(sub_total_price + sub_total_price * 0.1 + 20000);
+        document.getElementById('total-bill').innerHTML = displayNumber(sub_total_price + tax + 20000);
 
         let phantramgiamgia="<?php if(isset($_SESSION['phantramgiamgia'])) {
             echo intval($_SESSION['phantramgiamgia']);
@@ -121,7 +122,7 @@ function updateTotal(arr) {
             document.getElementById('gg').innerHTML='Giảm giá';
             document.getElementById('phantramgiamgia').innerHTML=phantramgiamgia +' %';
             document.getElementById('gcl').innerHTML='Còn lại';
-            document.getElementById('giaconlai').innerHTML=displayNumber((sub_total_price + sub_total_price * 0.1 + 20000)*(100-phantramgiamgia)/100)+" đ";
+            document.getElementById('giaconlai').innerHTML=displayNumber(parseInt((sub_total_price + tax + 20000)*(100-phantramgiamgia)/100))+" đ";
         } 
         
     } else {
@@ -178,7 +179,7 @@ function test1() { //thanh toan thanh cong
     });
 }
 
-function test() {
+function displayModal() {
     $('#myModal').modal('show');
 }
 

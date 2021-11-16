@@ -104,7 +104,7 @@
                 </div>
 
                 <div id="btn-payment" class="btn-expand" style="visibility:hidden"></div>
-                <div id="tienmat" class="btn-primary btn-expand" onclick="test()">Thanh toán</div>
+                <div id="tienmat" class="btn-primary btn-expand" onclick="displayModal()">Thanh toán</div>
 
             </div>
         </div>
