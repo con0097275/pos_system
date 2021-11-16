@@ -24,7 +24,7 @@
     <div class="container">
         <div class="navbar hide-on-mobile mt-4 mb-3">
             <div class="btn navbar-toggler-icon">
-                <img src="img/icon_arrow_left.svg" alt="" onclick="window.location.href='../food-ordering'">
+                <img src="img/icon_arrow_left.svg" alt="" onclick="callbackPage()">
             </div>
             <div class="navbar-brand col-md-6 col-sm-12" href="#">
                 <h2>Thanh toán</h2>

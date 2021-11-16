@@ -1,23 +1,23 @@
 
+<?php $cart = $_SESSION['cart'] ?>
+
 <script type="text/javascript">
 function callbackPage() {
     //window.location = "menu link";
     //move to the menu
+    window.location.href='../food-ordering';
 
 }
 
-let products = [{
-        id: 1,
-        name: 'Bò tơ chiên',
-        price: 250000,
-        quantity: 3,
-    },
-    {
-        id: 2,
-        name: 'Bò rungwf nuongws',
-        price: 300000,
-        quantity: 3,
-    }
+let products = [
+    <?php foreach($cart as $i): ?>        
+        {
+            id: <?php echo $i['MaMonAn'] ?>,
+            name: <?php echo $i['TenMonAn']?>,
+            price: <?php echo $i['giaTien']?>,
+            quantity: <?php echo $i['num'] ?>,
+        },
+    <?php endforeach; ?>
 
 ];
 
@@ -169,7 +169,7 @@ function test1() { //thanh toan thanh cong
             mount: document.getElementById('total-bill').innerHTML
         },
         success: function(response) {
-
+            callbackPage();
             // You will get response from your PHP page (what you echo or print)
         },
         error: function(jqXHR, textStatus, errorThrown) {
