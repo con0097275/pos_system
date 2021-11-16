@@ -1,11 +1,11 @@
 <?php
-session_start();
 require_once('../db/dbhelper.php');
 require_once('../funlib/funs.php');
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 
 <head>
   <meta charset="utf-8">
@@ -44,9 +44,8 @@ require_once('../funlib/funs.php');
      <link rel="stylesheet" href="./assets/style/responsive.css">
 </head>
 
-<body>
-    
-    
+<body onload="addCart(10,-1)">
+
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center fixed-top ">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
@@ -63,7 +62,8 @@ require_once('../funlib/funs.php');
         <h1><a href="../../HomePage">Ryan</a></h1>
       </div>
 
-      <button class="btn btn-warning" id="btn-cart">Mở Giỏ hàng</button>
+
+      <button class="btn btn-warning" id="btn-cart"  >Mở Giỏ hàng</button>
     </div>
   </header><!-- End Header -->
 
@@ -158,50 +158,9 @@ require_once('../funlib/funs.php');
                 </div>
             </div>
            <div class="col-md-4 col-xs-12 cart" id="cart">
-                <div class="cart__title">
-                    <i class="fas fa-shopping-cart"></i>
-                    Your Cart
-                </div>
-                <div class="cart__content">
-                    <div class="cart__top">
-                        <!-- Item 1 -->
-
-                        <?php
-               if(!isset($_SESSION['cart'])){
-                $_SESSION['cart']=[];
-            }
-                $sum_cost=0;
-                foreach($_SESSION["cart"] as $item){
-                    $gia=intval($item['num'])*intval($item['giaTien']);
-                    $sum_cost=$sum_cost+$gia;
-                   echo '
-                        <div class="cart__item">
-                            <img src="'.fixUrl($item['HinhAnh'],'../').'" alt="cup-cake-logo" class="cart__item-img">
-                            <div class="cart__item-quality">
-                                <div class="cart__item-quality-title">'.$item['TenMonAn'].'</div>
-                                <div class="cart__item-quality-count">
-                                    <button class="btn-minus" onclick="addCart('.$item['MaMonAn'].',-1)"><i class="fas fa-minus"></i></button>
-                                    <p class="cart__item-quality-number">'.$item['num'].'</p>
-                                    <button class="btn-add" onclick="addCart('.$item['MaMonAn'].',1)"><i class="fas fa-plus"></i></button>
-                                </div>
-                            </div>
-                            <div class="cart__item-cost">'.number_format($gia).' VNĐ</div>
-                        </div>';
-                    }
-    
-                    ?>
-              
-                        
-                    </div>
-                    <div class="cart__bottom">
-                        <div class="cart__total">
-                            <h4>Total:</h4>
-                            <p class="cart__total-cost"><?=number_format($sum_cost)?> VNĐ</p>
-                        </div>
-                        <div class="cart__payment">
-                            <button onclick="window.location.href='../../payment'" class="btn btn-danger w-100">PAYMENT</button>
-                        </div>
-                    </div>
+                
+                <div class="cart__content" id="cart_content">
+                    
                 </div>
             </div> 
         </div>
@@ -288,27 +247,24 @@ echo'
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<script>
-    
-    function addCart(mamonan, num){
-        console.log(mamonan, num);
-
+<script> 
+ 
+ function addCart(mamonan, num){     
         $.post('ajax.php',{
             'action':'cart',
             'id':mamonan,
             'num':num
         },function(data){
-            location.reload();
-            // const obj=JSON.parse(data);
-            
-            // console.log(data);
-            
+            $('#cart_content').html(data);
         })
         
     }
+
         
 </script>
 
 </body>
 
 </html>
+
+
