@@ -11,6 +11,9 @@ switch($action){
     case 'cart':
         addToCart();
         break;
+    case 'deletecart':       
+            unset($_SESSION['cart']);      
+        break;
     }
 
    
