@@ -177,10 +177,16 @@ function test1() { //thanh toan thanh cong
             console.log(textStatus, errorThrown);
         }
     });
+    $.post('../food-ordering/menupage/ajax.php',{
+            'action':'deletecart'
+        })
+    
 }
 
 function displayModal() {
     $('#myModal').modal('show');
 }
+
+
 
 </script>
