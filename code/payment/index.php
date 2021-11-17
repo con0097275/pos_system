@@ -47,12 +47,12 @@
                     </div>
 
                 </div>
-                <div class="card justify-content-between" id="voucher">
-                    <form action="../couponCode/index.php" method="POST" name="formgiamgia">
-                        <img src="img/icon_voucher.svg" alt="">
-                        <input placeholder="Bạn có mã giảm giá?" type="text" name="magiamgia"> 
+                <div class="card justify-content-between">
+                    <form id="voucher" action="../couponCode/index.php" method="POST" name="formgiamgia">
+                        <img id="voucher-i1" src="img/icon_voucher.svg" alt="">
+                        <input id="voucher-i2" placeholder="Bạn có mã giảm giá?" type="text" name="magiamgia"> 
                         
-                        <button type="submit" value="Submit" class="btn-success btn-right">Áp dụng</button>
+                        <button id="voucher-i3" type="submit" value="Submit" class="btn-success btn-right">Áp dụng</button>
                     </form>
                     <?php if(isset($_SESSION['phantramgiamgia']) && isset($_SESSION['magiamgia'])) {
                             $magiamgia=$_SESSION['magiamgia'];
@@ -104,7 +104,7 @@
                 </div>
 
                 <div id="btn-payment" class="btn-expand" style="visibility:hidden"></div>
-                <div id="tienmat" class="btn-primary btn-expand" onclick="displayModal()">Thanh toán</div>
+                <div class="btn-primary btn-expand mb-3" onclick="displayModal()">Thanh toán</div>
 
             </div>
         </div>

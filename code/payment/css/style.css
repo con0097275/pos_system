@@ -1,5 +1,3 @@
-.desktop-navbar {}
-
 .card-title {
     font-size: 120%;
     font-weight: 500;
@@ -29,8 +27,6 @@
 .price-item {
     text-align: right;
 }
-
-.voucher {}
 
 .btn-expand {
     font-weight: 400;
@@ -65,4 +61,22 @@
 .textarea[contenteditable]:empty::before {
     content: "Ghi chú cho đơn hàng";
     color: gray;
+}
+
+@media (max-width: 400px) {
+    #voucher {
+        height: max-content;
+    }
+    #voucher-i3 {
+        float: none;
+        margin: auto;
+        display: table-row;
+    }
+    #voucher-i1 {
+        display: table-row;
+    }
+    #voucher-i2 {
+        display: table-row;
+        margin-bottom: 5px;
+    }
 }
