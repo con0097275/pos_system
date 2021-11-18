@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 06, 2021 lúc 05:11 AM
+-- Thời gian đã tạo: Th10 18, 2021 lúc 05:52 PM
 -- Phiên bản máy phục vụ: 10.4.21-MariaDB
 -- Phiên bản PHP: 7.3.31
 
@@ -97,11 +97,12 @@ CREATE TABLE `danhmuc` (
 --
 
 INSERT INTO `danhmuc` (`MaDanhMuc`, `TenDanhMuc`, `HinhAnh`) VALUES
-(1, 'Kem', 'photos/kem.jpg'),
-(123, 'Beer', 'photos/beer2.jpg'),
-(460, 'Juice', 'photos/juice2.jpg'),
-(461, 'Meat', 'photos/beef-steak.jpg'),
-(1111, 'Coca', 'photos/coca.png');
+(1, 'Nước ép', 'photos/icon.jpg'),
+(2, 'Hải sản', 'photos/icon-seafood.jpeg'),
+(3, 'Tráng miệng', 'photos/icon-dessert.jpeg'),
+(4, 'Thịt', 'photos/icon-meat.jpg'),
+(5, 'Mì ', 'photos/icon-noodle.jpg'),
+(6, 'Bia', 'photos/bia-icon.jpg');
 
 -- --------------------------------------------------------
 
@@ -159,7 +160,101 @@ INSERT INTO `khachhang` (`idKH`, `requestTime`) VALUES
 (12, '2021-10-30 22:02:01'),
 (13, '2021-10-30 22:02:02'),
 (14, '2021-10-30 22:02:07'),
-(15, '2021-10-30 22:02:10');
+(15, '2021-10-30 22:02:10'),
+(16, '2021-11-15 22:59:16'),
+(17, '2021-11-15 22:59:16'),
+(18, '2021-11-15 22:59:16'),
+(19, '2021-11-15 22:59:16'),
+(20, '2021-11-15 22:59:16'),
+(21, '2021-11-15 22:59:17'),
+(22, '2021-11-15 22:59:25'),
+(23, '2021-11-15 22:59:25'),
+(24, '2021-11-15 22:59:25'),
+(25, '2021-11-15 22:59:25'),
+(26, '2021-11-15 22:59:26'),
+(27, '2021-11-15 22:59:26'),
+(28, '2021-11-15 22:59:26'),
+(29, '2021-11-15 22:59:26'),
+(30, '2021-11-15 22:59:27'),
+(31, '2021-11-15 22:59:27'),
+(32, '2021-11-15 22:59:27'),
+(33, '2021-11-15 22:59:27'),
+(34, '2021-11-15 22:59:28'),
+(35, '2021-11-15 22:59:28'),
+(36, '2021-11-15 22:59:28'),
+(37, '2021-11-15 22:59:28'),
+(38, '2021-11-15 22:59:29'),
+(39, '2021-11-15 22:59:29'),
+(40, '2021-11-15 22:59:29'),
+(41, '2021-11-15 22:59:29'),
+(42, '2021-11-15 22:59:29'),
+(43, '2021-11-15 22:59:29'),
+(44, '2021-11-15 22:59:30'),
+(45, '2021-11-15 22:59:30'),
+(46, '2021-11-15 22:59:30'),
+(47, '2021-11-15 22:59:30'),
+(48, '2021-11-15 22:59:30'),
+(49, '2021-11-15 22:59:31'),
+(50, '2021-11-15 22:59:31'),
+(51, '2021-11-15 22:59:31'),
+(52, '2021-11-15 22:59:31'),
+(53, '2021-11-15 22:59:31'),
+(54, '2021-11-15 22:59:32'),
+(55, '2021-11-15 22:59:32'),
+(56, '2021-11-15 22:59:32'),
+(57, '2021-11-15 22:59:32'),
+(58, '2021-11-15 22:59:32'),
+(59, '2021-11-15 22:59:32'),
+(60, '2021-11-15 22:59:33'),
+(61, '2021-11-15 22:59:33'),
+(62, '2021-11-15 22:59:33'),
+(63, '2021-11-15 22:59:33'),
+(64, '2021-11-15 22:59:33'),
+(65, '2021-11-15 22:59:33'),
+(66, '2021-11-15 22:59:34'),
+(67, '2021-11-15 22:59:34'),
+(68, '2021-11-15 22:59:34'),
+(69, '2021-11-15 22:59:34'),
+(70, '2021-11-15 22:59:34'),
+(71, '2021-11-15 22:59:34'),
+(72, '2021-11-15 22:59:35'),
+(73, '2021-11-15 22:59:35'),
+(74, '2021-11-15 22:59:35'),
+(75, '2021-11-15 22:59:35'),
+(76, '2021-11-15 22:59:35'),
+(77, '2021-11-15 22:59:36'),
+(78, '2021-11-15 22:59:36'),
+(79, '2021-11-15 22:59:36'),
+(80, '2021-11-15 22:59:36'),
+(81, '2021-11-15 22:59:36'),
+(82, '2021-11-15 22:59:37'),
+(83, '2021-11-15 22:59:37'),
+(84, '2021-11-15 22:59:37'),
+(85, '2021-11-15 22:59:37'),
+(86, '2021-11-15 22:59:38'),
+(87, '2021-11-15 22:59:38'),
+(88, '2021-11-15 22:59:39'),
+(89, '2021-11-15 22:59:39'),
+(90, '2021-11-15 22:59:39'),
+(91, '2021-11-15 22:59:39'),
+(92, '2021-11-15 22:59:39'),
+(93, '2021-11-15 22:59:40'),
+(94, '2021-11-15 22:59:40'),
+(95, '2021-11-15 22:59:52'),
+(96, '2021-11-15 22:59:53'),
+(97, '2021-11-16 11:13:28'),
+(98, '2021-11-16 11:17:29'),
+(99, '2021-11-16 11:18:00'),
+(100, '2021-11-16 11:18:04'),
+(101, '2021-11-16 11:20:22'),
+(102, '2021-11-16 11:22:10'),
+(103, '2021-11-16 11:23:51'),
+(104, '2021-11-16 11:24:42'),
+(105, '2021-11-16 22:07:46'),
+(106, '2021-11-18 15:58:04'),
+(107, '2021-11-18 16:46:53'),
+(108, '2021-11-18 17:52:33'),
+(109, '2021-11-18 19:48:26');
 
 -- --------------------------------------------------------
 
@@ -188,6 +283,13 @@ CREATE TABLE `magiamgia` (
   `phantramGiamgia` int(11) DEFAULT NULL
 ) ;
 
+--
+-- Đang đổ dữ liệu cho bảng `magiamgia`
+--
+
+INSERT INTO `magiamgia` (`MaGiamGia`, `TGbatdau`, `TGketthuc`, `phantramGiamgia`) VALUES
+('ABCD', '2021-11-03 22:23:25', '2021-11-22 22:23:25', 25);
+
 -- --------------------------------------------------------
 
 --
@@ -208,24 +310,46 @@ CREATE TABLE `monan` (
 --
 
 INSERT INTO `monan` (`MaMonAn`, `TenMonAn`, `giaTien`, `HinhAnh`, `MoTa`, `Iddanhmuc`) VALUES
-(2, 'hahahaha', 3453, 'photos/heineken-beer.jpg', 'áergsdf', 123),
-(5, 'sdfgs', 3245, 'photos/Lemon.jfif', 'ádfgsdf', 460),
-(6, 'drfgs', 234, 'photos/kingcrab.jpg', 'ádfg', 461),
-(7, 'dfgsd', 3456, 'photos/quinhon-beer.png', 'èdgh', 460),
-(8, 'sdfgh', 345, 'photos/orange-juice.png', 'rdgsd', 460),
-(9, 'sdfg', 345, 'photos/Apple-juice.jfif', 'xdfgh', 460),
-(10, 'sdfghdf', 34534, 'photos/juice2.jpg', 'sdfgds', 460),
-(11, 'sdfgsd', 2345234, 'photos/iberico-ham.png', 'dfsghf', 461),
-(12, 'sdfgds', 34534, 'photos/fried-chicken.jpg', 'sdfgh', 461),
-(13, 'Beefsteak', 500000, 'photos/meat.jpg', 'Bít tết, là một món ăn bao gồm miếng thịt bò lát phẳng, thường được nướng vỉ, áp chảo hoặc nướng broiling ở nhiệt độ cao.', 461),
-(14, 'sdfgh', 3456, 'photos/voivoi.jpg', 'dstfhgfg', 461),
-(15, 'Kem Chocolate', 100000, 'photos/kem-chocolate.jpg', '', 1),
-(16, 'Kem Dâu tây', 150000, 'photos/kem-dau.jpg', 'kem dâu', 1),
-(17, 'Kem Bơ', 99000, 'photos/kem-bo.jpg', 'ẻgsdf', 1),
-(18, 'Kem Chocolate', 23452, 'photos/kem.jpg', 'ưergs', 1),
-(19, 'coca', 20000, 'photos/coca.png', 'Coca là tên gọi chung của bốn loài cây trồng trong họ Erythroxylaceae có nguồn gốc từ miền tây Nam Mỹ.\r\n\r\nCây được trồng như một loại hoa màu sinh lợi ở Argentina, Bolivia, Colombia, Ecuador, và Peru và cả những khu vực bị cấm trồng.[2] Có vài báo cáo cho rằng cây đang được trồng ở miền Nam Mexico như là cây hoa màu sinh lợi và là nguồn thay thế trong khâu buôn lậu sản phẩm cocain.[3] Nó cũng đóng vai trò trong nhiều hoạt động văn hóa truyền thống ở khu vực Andes cũng như ở dãy Sierra Nevada de Santa Marta. Coca được cả thế giới biết đến do chứa hợp chất alkaloid gây ảnh hưởng đến thần kinh là cocain. Lá coca chứa tỉ lệ thấp alkaloid, chỉ giữa 0,25% và 0,77%.[4] Do đó, nhai lá coca hoặc uống trà coca không gây ra tình trạng phê thuốc (hưng phấn, ái kỷ, u sầu) như những người dùng cocain. Chiết xuất từ lá coca được dùng trong Coca-Cola từ năm 1885, và trong khoảng năm 1929 thì cocain bị loại bỏ hoàn toàn trong loại thức uống này.[5][6] Việc chiết xuất cocain từ coca đòi hỏi nhiều dung môi và một quá trình hóa học gọi là chiết xuất acid/base có thể dễ dàng chiết xuất các chất alkaloid từ cây.', 1111),
-(20, 'pepsi', 20000, 'photos/pepsi.png', 'dfghdf', 1111),
-(21, 'sting', 15000, 'photos/sting.jpg', 'ádfas', 1111);
+(7, 'Nước ép cam', 50000, 'photos/oranges-juice.jpg', 'Nước cam hay nước cam ép, nước cam vắt là một loại thức uống phổ biến được làm từ cam bằng cách chiết xuất nước từ trái cam tươi bằng việc vắt hay ép thành một loại nước cam tươi', 1),
+(8, 'Nước ép cà rốt', 40000, 'photos/carrot-juice.jpeg', 'Nước ép cà rốt được chiết xuất từ ​​trái cà rốt. Nó không chỉ cung cấp kali và vitamin C mà còn rất giàu vitamin A. Uống nước ép cà rốt được cho là giúp tăng cường miễn dịch và cải thiện sức khỏe của mắt và da, trong số các lợi ích khác.', 1),
+(9, 'Nước ép việt quất', 60000, 'photos/blueberry-juice.jpg', 'Nam việt quất là một loại thực phẩm quen thuộc ở các vùng có khí hậu mát mẻ, phù hợp để cải thiện sức khỏe.', 1),
+(10, 'Nước ép cà chua', 50000, 'photos/Tomato-Juice.jpeg', 'Nước ép cà chua là một loại nước ép thơm ngon, bổ dưỡng được nhiều anh chị em lựa chọn.', 1),
+(11, 'Nước ép Cherry', 60000, 'photos/Cherry-juice.jpeg', 'Nước ép từ quả cherry không chỉ mang hương vị chua ngọt thơm ngon, giải nhiệt cơ thể mà còn có nhiều lợi ích cho sức khỏe.', 1),
+(12, 'Nước ép nho', 40000, 'photos/grape-juice.jpeg', 'Nước ép nho được nhập khẩu từ vườn trái cây tại Bình Định, đảm bảo chất lượng như Châu Âu.', 1),
+(14, 'Tôm chiên giòn', 200000, 'photos/1_tom_chien.png', 'Tôm chiên được chế biến với nguyên liệu tươi sống được nhập từ Gia Lai. ', 2),
+(15, 'Tôm sú xiên que', 150000, 'photos/2_tom_xien_que.jpg', 'Tôm sú xiên que được nướng với lửa vừa, tẩm ướp gia vị theo phong cách nước Pháp', 2),
+(16, 'Bánh cua Italia', 170000, 'photos/3_banh_cua.jpg', 'Món ăn có nguồn gốc từ đất nước Ý. ', 2),
+(17, 'Cá Tuna áp chảo', 250000, 'photos/4_ca_tuna.jpg', 'Cá hồi Tuna được sơ chế và áp chảo.', 2),
+(18, 'Tôm đất ', 300000, 'photos/5_tom_hap.jpg', 'Nguồn gốc món ăn từ đất nước mặt trời mọc Nhật Bản', 2),
+(19, 'Cá hồi áp chảo', 140000, 'photos/6_ca_hoi_ap_chao.jpg', 'Cá hồi được nhập khẩu từ Anh Quốc.', 2),
+(21, 'Kem chuối', 20000, 'photos/1-kem-chuoi.jpg', 'Kem chuối tươi mát cho mùa hè oi bức', 3),
+(22, 'Bánh mì socola', 50000, 'photos/2-banh-socola.jpg', 'Bánh sô cô la làm từ sô cô la', 3),
+(23, 'Socola Martuk', 70000, 'photos/3-chocola-vien.jpg', 'Sô cô la nhưng được làm từ sô cô là và sữa', 3),
+(24, 'Bánh xu kem', 30000, 'photos/4-banh-xu-kem.jpg', 'Bánh xu kem ngon và béo ngậy.', 3),
+(25, 'Bánh mì Lacus', 60000, 'photos/5-banh-kem.jpg', 'Bánh mì Lacus có nguồn gốc từ Italia, là một loại một món tráng miệng trong thực đơn của người Italia', 3),
+(26, 'Sữa chua Việt Quất', 70000, 'photos/6-sua-chua.jpg', 'Sữa chua chứa nhiều men khoáng tốt cho da và sức khỏe.', 3),
+(27, 'Bít tết hun khói', 500000, 'photos/1-bit-tet-hun-khoi.jpg', 'Thịt bò kobe được nhập khẩu từ Nhật Bản đạt chuẩn chất lượng xứ sở mặt trời mọc.', 4),
+(29, 'Thịt viên Bungary', 120000, 'photos/3-thit-vien.jpg', 'Một món ăn mang đậm chất nghệ thuật từ đất nước Bungari', 4),
+(30, 'Thịt cừu xiên nướng', 100000, 'photos/4-thit-nuong.jpg', 'Thịt cừu nướng dưới lửa than chín vừa phù hợp với rượu Whiskey', 4),
+(31, 'Sườn heo chiên giòn', 100000, 'photos/5-suon-heo-chien-gion.jpg', 'Sườn heo non chiên giòn với tỏi hành phi, mang một vị ngon ngọt, mặn mặn.', 4),
+(32, 'Thịt kho tàu', 200000, 'photos/6-thit-kho-tau.jpg', 'Món ăn truyền thống của người dân Việt Nam không thể thiếu trong những bữa ăn truyền thống.', 4),
+(33, 'Thịt heo Bắc Thảo', 130000, 'photos/7-thit-heo-bac-thao.jpg', 'Thịt heo Bắc Thảo cay giòn sần sật đậm đạ nước sốt truyền thống.', 4),
+(34, 'Mì nước trứng', 80000, 'photos/1-my-trung.jpg', 'Sợi mì tươi được chế biến qua 3 giai đoạn, đảm bảo sự hài lòng với quý khách.', 5),
+(35, 'Mì cay sợi thịt', 40000, 'photos/2-my-soi-thit.jpg', 'Mì cay sợi thịt Hàn Quốc', 5),
+(36, 'Mỳ hải sản', 80000, 'photos/3-my-hai-san.jpg', 'Mì hải sản cay cay xe xe ', 5),
+(37, 'Mỳ trộn Ramen', 40000, 'photos/4-my-tron.jpg', 'Ramen là một món ăn truyền thống của người dân Nhật Bản', 5),
+(38, 'Mi Ryan', 300000, 'photos/5-my-Ryan.jpg', 'Mì truyền thống của nhà hàng Ryan', 5),
+(39, 'Mì khô ngọt', 50000, 'photos/6-my-kho-trung.jpg', 'Mì khô ngọt sợi mì mềm dai.', 5),
+(40, 'Mì dĩa Ấn Độ', 90000, 'photos/7-my-an-do.jpg', 'Được chế biến theo phong cách Ấn độ mang đến sự lạ mắt trong mắt thực khách', 5),
+(41, 'Carton', 50000, 'photos/1-carton.jpg', 'Bia nhập khẩu từ Canada', 6),
+(42, 'Toncani', 50000, 'photos/2-toncani.jpg', 'Toncani là loại bia mang đậm hương vị Anh Quốc', 6),
+(43, 'Amster', 50000, 'photos/3-amster.jpg', 'Amster là loại bia mang đậm phong cách hoài cổ nước Ý được sản xuất từ những năm đầu 1900', 6),
+(44, 'Brahama', 60000, 'photos/4-brahama.jpg', 'Brahama được nhập khẩu từ Hy Lạp', 6),
+(45, 'Astella', 50000, 'photos/5-astella.jpg', 'Mang hương vị thơm của lúa mạch cùng với vị chua của trái chanh non.', 6),
+(46, 'Corona', 90000, 'photos/6-corona.jpg', 'Corona là loại bia được sản xuất tại Hungary, với vị chanh tuyết chủ đạo.', 6),
+(47, 'Scoth Ale', 80000, 'photos/7-scoth ale.jpg', 'Hương vị ngọt ngào của biển kết hợp với trái cherry', 6),
+(48, 'Maredsous', 90000, 'photos/8-mảedsous.jpg', 'Thức uống hoàn hảo cho những quý ngài.', 6),
+(49, 'Splurge', 70000, 'photos/8-splurge.jpg', 'Hương vị chủ đạo trầm với mùi hương của gỗ tuyết tùng', 6);
 
 -- --------------------------------------------------------
 
@@ -268,7 +392,7 @@ CREATE TABLE `taikhoan` (
 --
 
 INSERT INTO `taikhoan` (`id_taikhoan`, `email`, `matkhau`, `vkey`, `verified`, `createdate`) VALUES
-(13, 'van.nguyen0097275@hcmut.edu.vn', '$2y$10$KpYFkKxpIKGydBW0LTAzOeIQcHmErfe5U.bNxkuYHAZa8gGCY/XOK', 'fc584032019581aa80467e5dd5338368', 1, '2021-10-30 22:03:59');
+(25, 'van.nguyen0097275@hcmut.edu.vn', '$2y$10$B.evAiwCiclojcX3mRLNCuAqxSDDp3MVPYKODgj677mvv2q4U3mDK', '715eed5b77136c48ffcac6ca7b2e346c', 1, '2021-11-18 22:24:53');
 
 -- --------------------------------------------------------
 
@@ -288,7 +412,7 @@ CREATE TABLE `thanhvien` (
 --
 
 INSERT INTO `thanhvien` (`idTV`, `Hoten`, `sdt`, `diachi`) VALUES
-(12, 'van nguyen', '+84339331739', NULL);
+(24, 'van nguyen', '+84339331739', NULL);
 
 -- --------------------------------------------------------
 
@@ -298,11 +422,22 @@ INSERT INTO `thanhvien` (`idTV`, `Hoten`, `sdt`, `diachi`) VALUES
 
 CREATE TABLE `thongtindatcho` (
   `idTV` int(11) NOT NULL,
-  `NgayGio` datetime NOT NULL,
-  `soNguoiLon` int(11) DEFAULT NULL,
-  `soTreEm` int(11) DEFAULT NULL,
-  `ghiChu` text COLLATE utf8mb4_vietnamese_ci DEFAULT NULL
+  `ngay` date NOT NULL,
+  `gio` time NOT NULL,
+  `hoten` varchar(100) COLLATE utf8mb4_vietnamese_ci NOT NULL,
+  `email` varchar(200) COLLATE utf8mb4_vietnamese_ci NOT NULL,
+  `sdt` varchar(20) COLLATE utf8mb4_vietnamese_ci NOT NULL,
+  `songuoi` int(11) NOT NULL,
+  `chinhanh` varchar(200) COLLATE utf8mb4_vietnamese_ci NOT NULL,
+  `noidung` text COLLATE utf8mb4_vietnamese_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `thongtindatcho`
+--
+
+INSERT INTO `thongtindatcho` (`idTV`, `ngay`, `gio`, `hoten`, `email`, `sdt`, `songuoi`, `chinhanh`, `noidung`) VALUES
+(20, '2021-12-03', '23:00:00', 'nguyen ke van', 'van.nguyen0097275@hcmut.edu.vn', '0339331739', 10, 'Ryan Nguyễn Văn Trỗi', '10 món ăn');
 
 -- --------------------------------------------------------
 
@@ -376,7 +511,7 @@ CREATE TABLE `tvcotk` (
 --
 
 INSERT INTO `tvcotk` (`idTK`, `idTV`) VALUES
-(13, 12);
+(25, 24);
 
 -- --------------------------------------------------------
 
@@ -502,7 +637,7 @@ ALTER TABLE `thanhvien`
 -- Chỉ mục cho bảng `thongtindatcho`
 --
 ALTER TABLE `thongtindatcho`
-  ADD PRIMARY KEY (`idTV`,`NgayGio`);
+  ADD PRIMARY KEY (`idTV`,`ngay`,`gio`);
 
 --
 -- Chỉ mục cho bảng `thongtintinhtrangbanan`
@@ -578,25 +713,25 @@ ALTER TABLE `donhang`
 -- AUTO_INCREMENT cho bảng `khachhang`
 --
 ALTER TABLE `khachhang`
-  MODIFY `idKH` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `idKH` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
 
 --
 -- AUTO_INCREMENT cho bảng `monan`
 --
 ALTER TABLE `monan`
-  MODIFY `MaMonAn` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `MaMonAn` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT cho bảng `taikhoan`
 --
 ALTER TABLE `taikhoan`
-  MODIFY `id_taikhoan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_taikhoan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT cho bảng `thanhvien`
 --
 ALTER TABLE `thanhvien`
-  MODIFY `idTV` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `idTV` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- Các ràng buộc cho các bảng đã đổ
