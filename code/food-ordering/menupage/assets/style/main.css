@@ -20,21 +20,27 @@
 }
 .menu__nav-item{
     margin-right: 10px;
-    border: 5px solid #f8f8f8;
-    border-radius: 5px;
+    border-radius: 10px;
+    background-color: white
 }
 .menu__nav-item h6{
     font-weight: bolder;
-    color: #E40B06;
+    color: #2C3959;
 }
-.menu__nav-item a:focus h6{
-    font-weight: bolder;
-    color: black;
+.menu__nav-item:hover {
+    background-color: #2C3959;
+}
+.menu__nav-item:hover a h6{
+    color: white;
+}
+.menu__nav-item.active{
+    display: none;
 }
 .menu__nav-item a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 .menu__nav-item img{
     width: 80px;
@@ -80,6 +86,9 @@
     font-size: 17px;
     font-weight: 700;
     margin-right: 10px;
+}
+.icon-buy{
+    color: white;
 }
 .menu__content-item-buy a{
     background-color: #E40B06;

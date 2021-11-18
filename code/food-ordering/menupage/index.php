@@ -76,7 +76,7 @@ require_once('../funlib/funs.php');
         <div class="row">
             <div class="col-md-8 col-xs-12 menu ">
                 <div class="menu__content">
-                    <ul class="nav nav-tabs menu__nav" id="myTab" role="tablist">
+                    <ul class="nav nav-pills menu__nav" id="pills-tab" role="tablist">
                     <?php
                         $sql ='select * from danhmuc';
                         $danhmuclist = executeResult($sql);
@@ -116,7 +116,7 @@ require_once('../funlib/funs.php');
                                         <h6 class="card-title">'.$monanlist[$i]['TenMonAn'].'</h6>
                                         <div class="menu__content-item-buy">
                                             <h6>'.number_format($monanlist[$i]['giaTien']).' VNĐ</h6>
-                                            <a  class="btn btn-danger" onclick="addCart('.$monanlist[$i]['MaMonAn'].',1)"><i class="fas fa-shopping-cart"></i></a>
+                                            <a  class="btn btn-danger" onclick="addCart('.$monanlist[$i]['MaMonAn'].',1)"><i class="fas fa-shopping-cart icon-buy"></i></a>
                                         </div>
                                     </div>
                                 </div>';
@@ -130,7 +130,7 @@ require_once('../funlib/funs.php');
                                         <h6 class="card-title">'.$monanlist[$i+1]['TenMonAn'].'</h6>
                                         <div class="menu__content-item-buy">
                                             <h6>'.number_format($monanlist[$i+1]['giaTien']).' VNĐ</h6>
-                                            <a  class="btn btn-danger" onclick="addCart('.$monanlist[$i+1]['MaMonAn'].',1)"><i class="fas fa-shopping-cart"></i></a>
+                                            <a  class="btn btn-danger" onclick="addCart('.$monanlist[$i+1]['MaMonAn'].',1)"><i class="fas fa-shopping-cart icon-buy"></i></a>
                                         </div>
                                     </div>
                                 </div>';
@@ -144,7 +144,7 @@ require_once('../funlib/funs.php');
                                         <h6 class="card-title">'.$monanlist[$i+2]['TenMonAn'].'</h6>
                                         <div class="menu__content-item-buy">
                                             <h6>'.number_format($monanlist[$i+2]['giaTien']).' VNĐ</h6>
-                                            <a  class="btn btn-danger" onclick="addCart('.$monanlist[$i+2]['MaMonAn'].',1)"><i class="fas fa-shopping-cart"></i></a>  
+                                            <a  class="btn btn-danger" onclick="addCart('.$monanlist[$i+2]['MaMonAn'].',1)"><i class="fas fa-shopping-cart icon-buy"></i></a>  
                                         </div>
                                     </div>
                                 </div>';
