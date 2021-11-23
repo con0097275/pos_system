@@ -56,12 +56,12 @@ if (isset($_GET['vkey'])) {
         //validate the email:
         $update= $conn->query("UPDATE taikhoan SET verified=1 WHERE vkey='$vkey' LIMIT 1");
         if ($update) {
-            echo "<h3 style='color:#3C589C;text-align:center;font-weight: 700;'>Your account has been verified. You may now login..</h3>";
+            echo "<h3 style='color:#3C589C;text-align:center;font-weight: 700;'>Tài khoản của bạn đã được kích hoạt thành công. Bây giờ bạn có thể đăng nhập vào web..</h3>";
         } else{
             echo $conn->error;
         }     
     } else {
-        echo "<h3 style='color:#3C589C;text-align:center;font-weight: 700;'>This account invalid or already verified</h3>";
+        echo "<h3 style='color:#3C589C;text-align:center;font-weight: 700;'>Tài khoản không hợp lệ hoặc đã được kích hoạt.</h3>";
     }
     $conn->close();
 } else {

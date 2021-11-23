@@ -36,7 +36,7 @@
   <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
       <i class="bi bi-phone d-flex align-items-center"><span>+84 354 637 020</span></i>
-      <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Thứ Hai-Chủ Nhật: 11:00 AM - 23:00 PM</span></i>
+      <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Thứ Hai-Chủ Nhật: 7:00 AM - 23:00 PM</span></i>
     </div>
   </section>
 
@@ -45,7 +45,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <div class="logo me-auto">
-        <h1><a href="index.html">Ryan</a></h1>
+        <h1><a href="#">Ryan</a></h1>
       </div>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
@@ -503,7 +503,7 @@
             <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
               <i class="bi bi-clock"></i>
               <h4>Giờ mở cửa:</h4>
-              <p>Thứ Hai-Chủ Nhật:<br>11:00 AM - 2300 PM</p>
+              <p>Thứ Hai-Chủ Nhật:<br>7:00 AM - 23:00 PM</p>
             </div>
 
             <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">

@@ -29,15 +29,15 @@ if (isset($_POST['submit_dki'])) {
         $cpassword= test_input($_POST['cpassword']);
         
         if (!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
-            $nameErr_dk = "Only letters and white space allowed";
+            $nameErr_dk = "Họ tên chỉ bao gồm kí tự chữ cái và dấu khoảng trắng";
         } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $emailErr = "Invalid email format";
+            $emailErr = "Vui lòng nhập đúng thông tin địa chỉ email";
         } else if ( (!preg_match("/^[0-9-+]*$/",$phone)) || (strlen($phone)<9)) {
-            $phoneErr_dk="Invalid phone format";
+            $phoneErr_dk="Vui lòng nhập đúng thông tin số điện thoại";
         } else if (strlen($password)<8) {
-            $passErr_dk="<p>Your password must be at least 8 characters. Try again. </p>";
+            $passErr_dk="<p>Mật khẩu của bạn phải có ít nhất 8 kí tự. Vui lòng thử lại. </p>";
         } else if ($password != $cpassword){
-            $cpassErr_dk ="<p>Your retype password did not match. Try agin.</p>";
+            $cpassErr_dk ="<p>Mật khẩu nhập lại không trùng khớp. Vui lòng thử lại. </p>";
         } else {
             //form is valid
             //connect to the database
@@ -53,7 +53,7 @@ if (isset($_POST['submit_dki'])) {
             //check if account exist??
             $checkTKexist=$conn->query("SELECT * FROM taikhoan WHERE email='$email'");
             if ($checkTKexist->num_rows) {
-                $emailErr_dk="The account had already exist";
+                $emailErr_dk="Tài Khoản đã tồn tại";
             } else {
                 //Generate Vkey:
                 $vkey=md5(time().$email);
@@ -101,19 +101,19 @@ if (isset($_POST['submit_dki'])) {
         }
     } else {  //user have not fill all the form
         if (empty($_POST['name'])) {
-            $nameErr_dk="Please Enter Name";
+            $nameErr_dk="Vui lòng điền họ tên";
         }
         if (empty($_POST['phone'])) {
-            $phoneErr_dk="Please Enter Phone";
+            $phoneErr_dk="Vui lòng điền số điện thoại";
         } 
         if (empty($_POST['email'])) {
-            $emailErr_dk="Please Enter Email Address";
+            $emailErr_dk="Vui lòng nhập địa chỉ email";
         }
         if (empty($_POST['password'])) {
-            $passErr_dk="Please Enter Password";
+            $passErr_dk="Vui lòng nhập mật khẩu";
         }
         if (empty($_POST['cpassword'])) {
-            $cpassErr_dk="Please Enter Retype Password";
+            $cpassErr_dk="Vui lòng nhập lại mật khẩu";
         }
     }
 }
@@ -169,22 +169,22 @@ if (isset($_POST['submit_dn'])) {
                     header("Location:../HomePage");
 
                 } else {
-                    $emailErr_dn = "This account has not been yet verified. An email was sent to $email on $date";
+                    $emailErr_dn = "Tài khoản này chưa được kích hoạt. Xác thực đã gửi đến $email vào ngày $date";
                 }
             } else {
-                $passErr_dn = "Incorrect Password. Try again.";
+                $passErr_dn = "Mật khẩu không hợp lệ. Vui lòng thử lại";
             }
         } else {
             //invalid credentials:
-            $emailErr_dn = "The email you entered is incorrect";
+            $emailErr_dn = "Tài khoản email không hợp lệ";
         }
         $conn->close();
     } else {   //if user have not fill all the form, display error message:
         if (empty($_POST['em'])){
-            $emailErr_dn="Please Enter Email Address";
+            $emailErr_dn="Vui lòng nhập địa chỉ email";
         }
         if (empty($_POST['pw'])) {
-            $passErr_dn="Please Enter Password";
+            $passErr_dn="Vui lòng nhập mật khẩu";
         }
     }      
 }
