@@ -1,5 +1,11 @@
 
-<?php $cart = $_SESSION['cart'] ?>
+
+<?php 
+$cart="";
+if (isset($_SESSION['cart'])) {
+    $cart = $_SESSION['cart'];
+}
+ ?>
 
 <script type="text/javascript">
 function callbackPage() {
@@ -11,12 +17,10 @@ function callbackPage() {
 
 let products = [    
     <?php foreach($cart as $i): ?>        
-        {
-            id: <?php echo $i['MaMonAn'] ?>,
+            {id: <?php echo $i['MaMonAn'] ?>,
             name: <?php echo "'" . $i['TenMonAn'] . "'"?>,
             price: <?php echo $i['giaTien']?>,
-            quantity: <?php echo $i['num'] ?>,
-        },
+            quantity: <?php echo $i['num'] ?>},
     <?php endforeach; ?>
 
 ];
@@ -171,6 +175,7 @@ function test1() { //thanh toan thanh cong
         },
         success: function(response) {
             callbackPage();
+            alert("Thanh toán thành công");
             // You will get response from your PHP page (what you echo or print)
         },
         error: function(jqXHR, textStatus, errorThrown) {
