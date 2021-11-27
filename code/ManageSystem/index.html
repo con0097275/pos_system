@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Quản lý thành viên</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Oswald:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+      <div class="fluid-container">
+        <div class="row main">
+            <div class="col-3">
+                <div class="sidebar">
+                    <div class="sidebar-header">Ryan's System</div>
+                    <div class="sidebar-wrapper">
+                        <ul class="sidebar-list">
+                            <li class="sidebar-item">
+                                <a href="./index.html" class="sidebar-link active">1. Quản lí thành viên</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="./datban.html" class="sidebar-link">2. Quản lí thông tin đặt bàn</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="./binhluan.html" class="sidebar-link">3. Quản lí bình luận, đánh giá</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="./monan.html" class="sidebar-link">4. Quản lí món ăn</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="./danhmuc.html" class="sidebar-link">5. Quản lí danh mục món ăn</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="./hoadon.html" class="sidebar-link">6. Quản lí hóa đơn</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="./magiamgia.html" class="sidebar-link">7. Quản lí mã giảm giá</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="data">
+                    <div class="data-action">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addItemModal" data-whatever="Thêm">Thêm Item</button>
+                        <div class="input-group search-box">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-append">
+                              <button class="btn btn-primary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-table">
+                        <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">ID</th>
+                                <th scope="col">Họ Tên</th>
+                                <th scope="col">Địa chỉ</th>
+                                <th scope="col">Sửa</th>
+                                <th scope="col">Xóa</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>1</td>
+                                <td>Mark</td>
+                                <td>Bình Định</td>
+                                <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#addItemModal" data-whatever="Chỉnh Sửa">Chỉnh sửa</button></td>
+                                <td><button type="button" class="btn btn-danger">Xóa</button></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>2</td>
+                                <td>Mark</td>
+                                <td>Gia Lai</td>
+                                <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#addItemModal" data-whatever="Chỉnh Sửa">Chỉnh sửa</button></td>
+                                <td><button type="button" class="btn btn-danger">Xóa</button></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>3</td>
+                                <td>Dũng</td>
+                                <td>Bình Định</td>
+                                <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#addItemModal" data-whatever="Chỉnh Sửa">Chỉnh sửa</button></td>
+                                <td><button type="button" class="btn btn-danger">Xóa</button></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">4</th>
+                                <td>4</td>
+                                <td>Cường</td>
+                                <td>Bình Định</td>
+                                <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#addItemModal" data-whatever="Chỉnh Sửa">Chỉnh sửa</button></td>
+                                <td><button type="button" class="btn btn-danger">Xóa</button></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">5</th>
+                                <td>5</td>
+                                <td>Tuấn</td>
+                                <td>Bình Định</td>
+                                <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#addItemModal" data-whatever="Chỉnh Sửa">Chỉnh sửa</button></td>
+                                <td><button type="button" class="btn btn-danger">Xóa</button></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>    
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="addItemModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Nhập thông tin Item</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="id">ID</label>
+                  <input type="number" class="form-control" id="id" placeholder="Nhập ID">
+                </div>
+                <div class="form-group">
+                  <label for="name">Họ Tên</label>
+                  <input type="text" class="form-control" id="name" placeholder="Nhập Họ Tên">
+                </div> 
+                <div class="form-group">
+                  <label for="adress">Địa chỉ</label>
+                  <input type="text" class="form-control" id="adress" placeholder="Nhập Địa Chỉ">
+                </div> 
+                <button type="submit" class="btn btn-primary btn-submit">Thêm</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js.js"></script>
+  </body>
+</html>

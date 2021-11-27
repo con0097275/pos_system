@@ -1,0 +1,71 @@
+.btn-primary{
+    background-color: #64C5B1;
+    border-color: #64C5B1;
+}
+.btn-primary:hover{
+    background-color: black;
+    border-color: black;
+}
+.main{
+}
+.sidebar{
+    background-color: #64C5B1;
+    height: 100vh;
+}
+.sidebar-header{
+    font-family: 'Comforter', cursive;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.sidebar-wrapper{
+}
+.sidebar-list{
+    font-family: 'Oswald', sans-serif;
+    list-style: none;
+    padding: 0;
+}
+.sidebar-item{ 
+}
+.sidebar-link{
+    color: white;
+    display: block;
+    padding: 10px 0;
+    padding-left: 20px;
+    border-radius: 3px;
+}
+.sidebar-link.active{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transform: translateX(5px);
+}
+.sidebar-link:hover{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    /* transform: translateX(5px); */
+}
+/* Data Table */
+.data{
+    margin: 30px 30px 0;
+    font-family: 'Roboto', sans-serif;
+}
+.data-action{
+    display: flex;
+    justify-content: space-between;
+}
+.search-box{
+    width: 30%;
+    margin-right: 40px;
+}
+.data-table{
+    margin-top: 40px;
+}
+.btn-submit{
+    margin-left: 70%;
+    padding: 8px 30px;
+}
