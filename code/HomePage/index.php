@@ -8,7 +8,7 @@
   <title>Ryan Restaurant</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -60,13 +60,23 @@
               <li><a href="#branch">Chi nhánh 3</a></li>
             </ul>
           </li>
+          
           <li><a class="nav-link scrollto" href="#contact">Liên hệ</a></li>
-          <li><a class="nav-link scrollto" href="../login"><img src="assets/img/login_icon.png" id="login"> 
-            <?php 
-              if(isset($_SESSION['tenthanhvien'])){echo " ". $_SESSION['tenthanhvien'];}
-             ?>
-            </a>
+
+          <?php if(isset($_SESSION['tenthanhvien'])){ ?> 
+          <li class="dropdown"><a href="#branch"><span><img src="assets/img/login_icon.png"  id="login"><?=$_SESSION['tenthanhvien']?></span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../profileUser/doithongtincanhan">Đổi thông tin cá nhân</a></li>
+              <li><a href="../profileUser/doimatkhau">Đổi mật khẩu</a></li>
+              <li><a href="../login/php/logout.php">Đăng xuất</a></li>
+            </ul>
           </li>
+          <?php } else { ?>
+          <li><a class="nav-link scrollto" href="../login"><img src="assets/img/login_icon.png" id="login">
+             </a>
+          </li>
+            <?php }?>
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

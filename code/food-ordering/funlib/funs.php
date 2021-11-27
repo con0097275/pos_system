@@ -5,7 +5,6 @@ function moveFile($key, $rootPath = "../"){
     || $_FILES[$key]['name']==''){
         return '';
     }
-
     $pathTemp = $_FILES[$key]["tmp_name"];
 
     $filename = $_FILES[$key]['name'];
@@ -14,7 +13,6 @@ function moveFile($key, $rootPath = "../"){
     move_uploaded_file($pathTemp, $rootPath.$newPath);
     return $newPath;
 }
-
 function fixUrl($thumbnail, $rootPath = "../"){
     if(stripos($thumbnail, 'http://')!== false || 
         stripos($thumbnail,'https://')!== false){

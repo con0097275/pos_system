@@ -5,12 +5,6 @@
 <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <!-- <div id='test'>50000</div>
-    <form action="" method="GET">
-  <label>Ma giam gia:</label><br>
-  <input type="text" id="mgg" name="magiamgia" value=""><br>
-  <input type="submit" value="Submit">
-</form> -->
 </body>
 </html>
 

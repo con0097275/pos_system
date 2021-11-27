@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 18, 2021 lúc 05:52 PM
--- Phiên bản máy phục vụ: 10.4.21-MariaDB
--- Phiên bản PHP: 7.3.31
+-- Host: 127.0.0.1
+-- Generation Time: Nov 27, 2021 at 08:46 AM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 7.3.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `pos_system`
+-- Database: `pos_system`
 --
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `banan`
+-- Table structure for table `banan`
 --
 
 CREATE TABLE `banan` (
@@ -38,7 +38,7 @@ CREATE TABLE `banan` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `binhluan`
+-- Table structure for table `binhluan`
 --
 
 CREATE TABLE `binhluan` (
@@ -49,7 +49,7 @@ CREATE TABLE `binhluan` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `chinhanh`
+-- Table structure for table `chinhanh`
 --
 
 CREATE TABLE `chinhanh` (
@@ -61,7 +61,7 @@ CREATE TABLE `chinhanh` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `chinhanhcodanhmuc`
+-- Table structure for table `chinhanhcodanhmuc`
 --
 
 CREATE TABLE `chinhanhcodanhmuc` (
@@ -72,7 +72,7 @@ CREATE TABLE `chinhanhcodanhmuc` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `chinhanhcomonan`
+-- Table structure for table `chinhanhcomonan`
 --
 
 CREATE TABLE `chinhanhcomonan` (
@@ -83,7 +83,7 @@ CREATE TABLE `chinhanhcomonan` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `danhmuc`
+-- Table structure for table `danhmuc`
 --
 
 CREATE TABLE `danhmuc` (
@@ -93,7 +93,7 @@ CREATE TABLE `danhmuc` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `danhmuc`
+-- Dumping data for table `danhmuc`
 --
 
 INSERT INTO `danhmuc` (`MaDanhMuc`, `TenDanhMuc`, `HinhAnh`) VALUES
@@ -107,7 +107,7 @@ INSERT INTO `danhmuc` (`MaDanhMuc`, `TenDanhMuc`, `HinhAnh`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `donhang`
+-- Table structure for table `donhang`
 --
 
 CREATE TABLE `donhang` (
@@ -121,7 +121,7 @@ CREATE TABLE `donhang` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `donhangcomonan`
+-- Table structure for table `donhangcomonan`
 --
 
 CREATE TABLE `donhangcomonan` (
@@ -133,7 +133,7 @@ CREATE TABLE `donhangcomonan` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `khachhang`
+-- Table structure for table `khachhang`
 --
 
 CREATE TABLE `khachhang` (
@@ -142,7 +142,7 @@ CREATE TABLE `khachhang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `khachhang`
+-- Dumping data for table `khachhang`
 --
 
 INSERT INTO `khachhang` (`idKH`, `requestTime`) VALUES
@@ -254,12 +254,30 @@ INSERT INTO `khachhang` (`idKH`, `requestTime`) VALUES
 (106, '2021-11-18 15:58:04'),
 (107, '2021-11-18 16:46:53'),
 (108, '2021-11-18 17:52:33'),
-(109, '2021-11-18 19:48:26');
+(109, '2021-11-18 19:48:26'),
+(110, '2021-11-23 11:22:59'),
+(111, '2021-11-23 13:16:08'),
+(112, '2021-11-23 22:39:14'),
+(113, '2021-11-24 20:08:24'),
+(114, '2021-11-25 17:10:23'),
+(115, '2021-11-25 20:07:39'),
+(116, '2021-11-25 23:17:27'),
+(117, '2021-11-26 11:21:01'),
+(118, '2021-11-26 15:38:50'),
+(119, '2021-11-26 17:55:05'),
+(120, '2021-11-26 21:56:33'),
+(121, '2021-11-26 22:19:39'),
+(122, '2021-11-26 22:19:54'),
+(123, '2021-11-27 00:45:23'),
+(124, '2021-11-27 09:46:21'),
+(125, '2021-11-27 11:13:22'),
+(126, '2021-11-27 13:25:27'),
+(127, '2021-11-27 14:30:51');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `khchonpttt_dh`
+-- Table structure for table `khchonpttt_dh`
 --
 
 CREATE TABLE `khchonpttt_dh` (
@@ -273,7 +291,7 @@ CREATE TABLE `khchonpttt_dh` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `magiamgia`
+-- Table structure for table `magiamgia`
 --
 
 CREATE TABLE `magiamgia` (
@@ -284,16 +302,16 @@ CREATE TABLE `magiamgia` (
 ) ;
 
 --
--- Đang đổ dữ liệu cho bảng `magiamgia`
+-- Dumping data for table `magiamgia`
 --
 
 INSERT INTO `magiamgia` (`MaGiamGia`, `TGbatdau`, `TGketthuc`, `phantramGiamgia`) VALUES
-('ABCD', '2021-11-03 22:23:25', '2021-11-22 22:23:25', 25);
+('ABCD', '2021-11-03 22:23:25', '2022-11-22 22:23:25', 25);
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `monan`
+-- Table structure for table `monan`
 --
 
 CREATE TABLE `monan` (
@@ -306,7 +324,7 @@ CREATE TABLE `monan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `monan`
+-- Dumping data for table `monan`
 --
 
 INSERT INTO `monan` (`MaMonAn`, `TenMonAn`, `giaTien`, `HinhAnh`, `MoTa`, `Iddanhmuc`) VALUES
@@ -354,7 +372,65 @@ INSERT INTO `monan` (`MaMonAn`, `TenMonAn`, `giaTien`, `HinhAnh`, `MoTa`, `Iddan
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `optionmonan`
+-- Table structure for table `nhanvien`
+--
+
+CREATE TABLE `nhanvien` (
+  `id` int(11) NOT NULL,
+  `hoten` varchar(200) COLLATE utf8mb4_vietnamese_ci NOT NULL,
+  `sdt` varchar(15) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `bangcap` varchar(100) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `diachi` varchar(300) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `nhanviennhapkho`
+--
+
+CREATE TABLE `nhanviennhapkho` (
+  `idNVNK` int(11) NOT NULL,
+  `tocdogophim` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `nhanvientuvan`
+--
+
+CREATE TABLE `nhanvientuvan` (
+  `idNVTV` int(11) NOT NULL,
+  `trinhdongoaingu` varchar(200) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `nhanvienxuli`
+--
+
+CREATE TABLE `nhanvienxuli` (
+  `idNVXL` int(11) NOT NULL,
+  `tocdoxuly` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `nvcotk`
+--
+
+CREATE TABLE `nvcotk` (
+  `idNV` int(11) NOT NULL,
+  `idTK` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `optionmonan`
 --
 
 CREATE TABLE `optionmonan` (
@@ -365,7 +441,7 @@ CREATE TABLE `optionmonan` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `phuongthucthanhtoan`
+-- Table structure for table `phuongthucthanhtoan`
 --
 
 CREATE TABLE `phuongthucthanhtoan` (
@@ -375,12 +451,50 @@ CREATE TABLE `phuongthucthanhtoan` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `taikhoan`
+-- Table structure for table `qtvcotk`
+--
+
+CREATE TABLE `qtvcotk` (
+  `idQTV` int(11) NOT NULL,
+  `idTK` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+
+--
+-- Dumping data for table `qtvcotk`
+--
+
+INSERT INTO `qtvcotk` (`idQTV`, `idTK`) VALUES
+(1, 27);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `quantrivien`
+--
+
+CREATE TABLE `quantrivien` (
+  `id` int(11) NOT NULL,
+  `hoten` varchar(200) COLLATE utf8mb4_vietnamese_ci NOT NULL,
+  `sdt` varchar(15) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `email` varchar(100) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+
+--
+-- Dumping data for table `quantrivien`
+--
+
+INSERT INTO `quantrivien` (`id`, `hoten`, `sdt`, `email`) VALUES
+(1, 'Nguyen Ke Van', '0339331739', 'van.nguyen0097275@hcmut.edu.vn');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `taikhoan`
 --
 
 CREATE TABLE `taikhoan` (
   `id_taikhoan` int(11) NOT NULL,
-  `email` varchar(200) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `email` varchar(200) COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `matkhau` varchar(100) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `vkey` varchar(400) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `verified` tinyint(1) DEFAULT 0,
@@ -388,16 +502,17 @@ CREATE TABLE `taikhoan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `taikhoan`
+-- Dumping data for table `taikhoan`
 --
 
 INSERT INTO `taikhoan` (`id_taikhoan`, `email`, `matkhau`, `vkey`, `verified`, `createdate`) VALUES
-(25, 'van.nguyen0097275@hcmut.edu.vn', '$2y$10$B.evAiwCiclojcX3mRLNCuAqxSDDp3MVPYKODgj677mvv2q4U3mDK', '715eed5b77136c48ffcac6ca7b2e346c', 1, '2021-11-18 22:24:53');
+(27, 'admin@gmail.com', '$2y$10$vBQp86aZf/10WWV6wgiH8exbdxV8TPisUrtOXL4o5CztpqNkJ8U0m', NULL, 1, '2021-11-26 21:49:15'),
+(29, 'van.nguyen0097275@hcmut.edu.vn', '$2y$10$MGkYeWiYPBPBs9lPyhnbWOZYsWNOMssit475DeUUe/ZHKU.bCrbcu', '65db402a9f85eac1b09445641302febf', 1, '2021-11-27 11:11:31');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `thanhvien`
+-- Table structure for table `thanhvien`
 --
 
 CREATE TABLE `thanhvien` (
@@ -408,16 +523,20 @@ CREATE TABLE `thanhvien` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `thanhvien`
+-- Dumping data for table `thanhvien`
 --
 
 INSERT INTO `thanhvien` (`idTV`, `Hoten`, `sdt`, `diachi`) VALUES
-(24, 'van nguyen', '+84339331739', NULL);
+(26, 'vandeptrai', '0339331739', '1801 asd'),
+(27, 'nguyen ke van', '0339331739', '180 trần hưng đạo'),
+(28, 'nguyen ke van', '0339331739', '180 trần hưng đạo'),
+(29, 'nguyen ke van', '0339331739', '18 trần hưng đạo'),
+(32, 'van nguyen', '+84339331739', '180 trần hưng đạo');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `thongtindatcho`
+-- Table structure for table `thongtindatcho`
 --
 
 CREATE TABLE `thongtindatcho` (
@@ -433,16 +552,17 @@ CREATE TABLE `thongtindatcho` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `thongtindatcho`
+-- Dumping data for table `thongtindatcho`
 --
 
 INSERT INTO `thongtindatcho` (`idTV`, `ngay`, `gio`, `hoten`, `email`, `sdt`, `songuoi`, `chinhanh`, `noidung`) VALUES
-(20, '2021-12-03', '23:00:00', 'nguyen ke van', 'van.nguyen0097275@hcmut.edu.vn', '0339331739', 10, 'Ryan Nguyễn Văn Trỗi', '10 món ăn');
+(20, '2021-12-03', '23:00:00', 'nguyen ke van', 'van.nguyen0097275@hcmut.edu.vn', '0339331739', 10, 'Ryan Nguyễn Văn Trỗi', '10 món ăn'),
+(25, '2021-12-03', '23:00:00', 'nguyen ke van', 'van.nguyen0097275@hcmut.edu.vn', '0339331739', 10, 'Ryan Đồng Khởi', 'Món Ăn A');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `thongtintinhtrangbanan`
+-- Table structure for table `thongtintinhtrangbanan`
 --
 
 CREATE TABLE `thongtintinhtrangbanan` (
@@ -455,7 +575,7 @@ CREATE TABLE `thongtintinhtrangbanan` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `ttnganhang`
+-- Table structure for table `ttnganhang`
 --
 
 CREATE TABLE `ttnganhang` (
@@ -466,7 +586,7 @@ CREATE TABLE `ttnganhang` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `tttienmat`
+-- Table structure for table `tttienmat`
 --
 
 CREATE TABLE `tttienmat` (
@@ -476,7 +596,7 @@ CREATE TABLE `tttienmat` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `tttindung`
+-- Table structure for table `tttindung`
 --
 
 CREATE TABLE `tttindung` (
@@ -486,7 +606,7 @@ CREATE TABLE `tttindung` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `tvapdungmgg_dh`
+-- Table structure for table `tvapdungmgg_dh`
 --
 
 CREATE TABLE `tvapdungmgg_dh` (
@@ -498,7 +618,7 @@ CREATE TABLE `tvapdungmgg_dh` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `tvcotk`
+-- Table structure for table `tvcotk`
 --
 
 CREATE TABLE `tvcotk` (
@@ -507,16 +627,16 @@ CREATE TABLE `tvcotk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `tvcotk`
+-- Dumping data for table `tvcotk`
 --
 
 INSERT INTO `tvcotk` (`idTK`, `idTV`) VALUES
-(25, 24);
+(29, 32);
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `tv_taobl_monan`
+-- Table structure for table `tv_taobl_monan`
 --
 
 CREATE TABLE `tv_taobl_monan` (
@@ -528,68 +648,68 @@ CREATE TABLE `tv_taobl_monan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
 --
--- Chỉ mục cho các bảng đã đổ
+-- Indexes for dumped tables
 --
 
 --
--- Chỉ mục cho bảng `banan`
+-- Indexes for table `banan`
 --
 ALTER TABLE `banan`
   ADD PRIMARY KEY (`MaBanAn`,`MaCN`);
 
 --
--- Chỉ mục cho bảng `binhluan`
+-- Indexes for table `binhluan`
 --
 ALTER TABLE `binhluan`
   ADD PRIMARY KEY (`MaBL`);
 
 --
--- Chỉ mục cho bảng `chinhanh`
+-- Indexes for table `chinhanh`
 --
 ALTER TABLE `chinhanh`
   ADD PRIMARY KEY (`machinhanh`);
 
 --
--- Chỉ mục cho bảng `chinhanhcodanhmuc`
+-- Indexes for table `chinhanhcodanhmuc`
 --
 ALTER TABLE `chinhanhcodanhmuc`
   ADD PRIMARY KEY (`MaCN`,`Iddanhmuc`),
   ADD KEY `Iddanhmuc` (`Iddanhmuc`);
 
 --
--- Chỉ mục cho bảng `chinhanhcomonan`
+-- Indexes for table `chinhanhcomonan`
 --
 ALTER TABLE `chinhanhcomonan`
   ADD PRIMARY KEY (`MaCN`,`MaMonAn`),
   ADD KEY `MaMonAn` (`MaMonAn`);
 
 --
--- Chỉ mục cho bảng `danhmuc`
+-- Indexes for table `danhmuc`
 --
 ALTER TABLE `danhmuc`
   ADD PRIMARY KEY (`MaDanhMuc`);
 
 --
--- Chỉ mục cho bảng `donhang`
+-- Indexes for table `donhang`
 --
 ALTER TABLE `donhang`
   ADD PRIMARY KEY (`MaDonHang`);
 
 --
--- Chỉ mục cho bảng `donhangcomonan`
+-- Indexes for table `donhangcomonan`
 --
 ALTER TABLE `donhangcomonan`
   ADD PRIMARY KEY (`madonhang`,`mamonan`),
   ADD KEY `mamonan` (`mamonan`);
 
 --
--- Chỉ mục cho bảng `khachhang`
+-- Indexes for table `khachhang`
 --
 ALTER TABLE `khachhang`
   ADD PRIMARY KEY (`idKH`);
 
 --
--- Chỉ mục cho bảng `khchonpttt_dh`
+-- Indexes for table `khchonpttt_dh`
 --
 ALTER TABLE `khchonpttt_dh`
   ADD PRIMARY KEY (`MaDH`,`IDKH`,`MaPTTT`),
@@ -597,75 +717,118 @@ ALTER TABLE `khchonpttt_dh`
   ADD KEY `MaPTTT` (`MaPTTT`);
 
 --
--- Chỉ mục cho bảng `magiamgia`
+-- Indexes for table `magiamgia`
 --
 ALTER TABLE `magiamgia`
   ADD PRIMARY KEY (`MaGiamGia`);
 
 --
--- Chỉ mục cho bảng `monan`
+-- Indexes for table `monan`
 --
 ALTER TABLE `monan`
   ADD PRIMARY KEY (`MaMonAn`),
   ADD KEY `Iddanhmuc` (`Iddanhmuc`);
 
 --
--- Chỉ mục cho bảng `optionmonan`
+-- Indexes for table `nhanvien`
+--
+ALTER TABLE `nhanvien`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `nhanviennhapkho`
+--
+ALTER TABLE `nhanviennhapkho`
+  ADD PRIMARY KEY (`idNVNK`);
+
+--
+-- Indexes for table `nhanvientuvan`
+--
+ALTER TABLE `nhanvientuvan`
+  ADD PRIMARY KEY (`idNVTV`);
+
+--
+-- Indexes for table `nhanvienxuli`
+--
+ALTER TABLE `nhanvienxuli`
+  ADD PRIMARY KEY (`idNVXL`);
+
+--
+-- Indexes for table `nvcotk`
+--
+ALTER TABLE `nvcotk`
+  ADD PRIMARY KEY (`idNV`);
+
+--
+-- Indexes for table `optionmonan`
 --
 ALTER TABLE `optionmonan`
   ADD PRIMARY KEY (`idMonAn`,`luachon`);
 
 --
--- Chỉ mục cho bảng `phuongthucthanhtoan`
+-- Indexes for table `phuongthucthanhtoan`
 --
 ALTER TABLE `phuongthucthanhtoan`
   ADD PRIMARY KEY (`MaPTTT`);
 
 --
--- Chỉ mục cho bảng `taikhoan`
+-- Indexes for table `qtvcotk`
 --
-ALTER TABLE `taikhoan`
-  ADD PRIMARY KEY (`id_taikhoan`);
+ALTER TABLE `qtvcotk`
+  ADD PRIMARY KEY (`idQTV`);
 
 --
--- Chỉ mục cho bảng `thanhvien`
+-- Indexes for table `quantrivien`
+--
+ALTER TABLE `quantrivien`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `taikhoan`
+--
+ALTER TABLE `taikhoan`
+  ADD PRIMARY KEY (`id_taikhoan`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Indexes for table `thanhvien`
 --
 ALTER TABLE `thanhvien`
   ADD PRIMARY KEY (`idTV`);
 
 --
--- Chỉ mục cho bảng `thongtindatcho`
+-- Indexes for table `thongtindatcho`
 --
 ALTER TABLE `thongtindatcho`
   ADD PRIMARY KEY (`idTV`,`ngay`,`gio`);
 
 --
--- Chỉ mục cho bảng `thongtintinhtrangbanan`
+-- Indexes for table `thongtintinhtrangbanan`
 --
 ALTER TABLE `thongtintinhtrangbanan`
   ADD PRIMARY KEY (`MaBanAn`,`Machinhanh`,`ngaygio`),
   ADD KEY `Machinhanh` (`Machinhanh`);
 
 --
--- Chỉ mục cho bảng `ttnganhang`
+-- Indexes for table `ttnganhang`
 --
 ALTER TABLE `ttnganhang`
   ADD PRIMARY KEY (`MaTTNH`);
 
 --
--- Chỉ mục cho bảng `tttienmat`
+-- Indexes for table `tttienmat`
 --
 ALTER TABLE `tttienmat`
   ADD PRIMARY KEY (`MaTTTM`);
 
 --
--- Chỉ mục cho bảng `tttindung`
+-- Indexes for table `tttindung`
 --
 ALTER TABLE `tttindung`
   ADD PRIMARY KEY (`MaTD`);
 
 --
--- Chỉ mục cho bảng `tvapdungmgg_dh`
+-- Indexes for table `tvapdungmgg_dh`
 --
 ALTER TABLE `tvapdungmgg_dh`
   ADD PRIMARY KEY (`idtv`,`maDH`,`MaGiamGia`),
@@ -673,14 +836,14 @@ ALTER TABLE `tvapdungmgg_dh`
   ADD KEY `MaGiamGia` (`MaGiamGia`);
 
 --
--- Chỉ mục cho bảng `tvcotk`
+-- Indexes for table `tvcotk`
 --
 ALTER TABLE `tvcotk`
   ADD PRIMARY KEY (`idTK`,`idTV`),
   ADD KEY `idTV` (`idTV`);
 
 --
--- Chỉ mục cho bảng `tv_taobl_monan`
+-- Indexes for table `tv_taobl_monan`
 --
 ALTER TABLE `tv_taobl_monan`
   ADD PRIMARY KEY (`IDTV`,`MaBL`,`MaMonan`),
@@ -688,78 +851,108 @@ ALTER TABLE `tv_taobl_monan`
   ADD KEY `MaMonan` (`MaMonan`);
 
 --
--- AUTO_INCREMENT cho các bảng đã đổ
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT cho bảng `binhluan`
+-- AUTO_INCREMENT for table `binhluan`
 --
 ALTER TABLE `binhluan`
   MODIFY `MaBL` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `danhmuc`
+-- AUTO_INCREMENT for table `danhmuc`
 --
 ALTER TABLE `danhmuc`
   MODIFY `MaDanhMuc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1112;
 
 --
--- AUTO_INCREMENT cho bảng `donhang`
+-- AUTO_INCREMENT for table `donhang`
 --
 ALTER TABLE `donhang`
   MODIFY `MaDonHang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3457;
 
 --
--- AUTO_INCREMENT cho bảng `khachhang`
+-- AUTO_INCREMENT for table `khachhang`
 --
 ALTER TABLE `khachhang`
-  MODIFY `idKH` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
+  MODIFY `idKH` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=128;
 
 --
--- AUTO_INCREMENT cho bảng `monan`
+-- AUTO_INCREMENT for table `monan`
 --
 ALTER TABLE `monan`
   MODIFY `MaMonAn` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
--- AUTO_INCREMENT cho bảng `taikhoan`
+-- AUTO_INCREMENT for table `nhanvien`
+--
+ALTER TABLE `nhanvien`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `nhanviennhapkho`
+--
+ALTER TABLE `nhanviennhapkho`
+  MODIFY `idNVNK` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `nhanvientuvan`
+--
+ALTER TABLE `nhanvientuvan`
+  MODIFY `idNVTV` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `nhanvienxuli`
+--
+ALTER TABLE `nhanvienxuli`
+  MODIFY `idNVXL` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `quantrivien`
+--
+ALTER TABLE `quantrivien`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `taikhoan`
 --
 ALTER TABLE `taikhoan`
-  MODIFY `id_taikhoan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id_taikhoan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
--- AUTO_INCREMENT cho bảng `thanhvien`
+-- AUTO_INCREMENT for table `thanhvien`
 --
 ALTER TABLE `thanhvien`
-  MODIFY `idTV` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `idTV` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
--- Các ràng buộc cho các bảng đã đổ
+-- Constraints for dumped tables
 --
 
 --
--- Các ràng buộc cho bảng `chinhanhcodanhmuc`
+-- Constraints for table `chinhanhcodanhmuc`
 --
 ALTER TABLE `chinhanhcodanhmuc`
   ADD CONSTRAINT `chinhanhcodanhmuc_ibfk_1` FOREIGN KEY (`MaCN`) REFERENCES `chinhanh` (`machinhanh`),
   ADD CONSTRAINT `chinhanhcodanhmuc_ibfk_2` FOREIGN KEY (`Iddanhmuc`) REFERENCES `danhmuc` (`MaDanhMuc`);
 
 --
--- Các ràng buộc cho bảng `chinhanhcomonan`
+-- Constraints for table `chinhanhcomonan`
 --
 ALTER TABLE `chinhanhcomonan`
   ADD CONSTRAINT `chinhanhcomonan_ibfk_1` FOREIGN KEY (`MaCN`) REFERENCES `chinhanh` (`machinhanh`),
   ADD CONSTRAINT `chinhanhcomonan_ibfk_2` FOREIGN KEY (`MaMonAn`) REFERENCES `monan` (`MaMonAn`);
 
 --
--- Các ràng buộc cho bảng `donhangcomonan`
+-- Constraints for table `donhangcomonan`
 --
 ALTER TABLE `donhangcomonan`
   ADD CONSTRAINT `donhangcomonan_ibfk_1` FOREIGN KEY (`madonhang`) REFERENCES `donhang` (`MaDonHang`),
   ADD CONSTRAINT `donhangcomonan_ibfk_2` FOREIGN KEY (`mamonan`) REFERENCES `monan` (`MaMonAn`);
 
 --
--- Các ràng buộc cho bảng `khchonpttt_dh`
+-- Constraints for table `khchonpttt_dh`
 --
 ALTER TABLE `khchonpttt_dh`
   ADD CONSTRAINT `khchonpttt_dh_ibfk_1` FOREIGN KEY (`MaDH`) REFERENCES `donhang` (`MaDonHang`),
@@ -767,50 +960,80 @@ ALTER TABLE `khchonpttt_dh`
   ADD CONSTRAINT `khchonpttt_dh_ibfk_3` FOREIGN KEY (`MaPTTT`) REFERENCES `phuongthucthanhtoan` (`MaPTTT`);
 
 --
--- Các ràng buộc cho bảng `monan`
+-- Constraints for table `monan`
 --
 ALTER TABLE `monan`
   ADD CONSTRAINT `monan_ibfk_1` FOREIGN KEY (`Iddanhmuc`) REFERENCES `danhmuc` (`MaDanhMuc`);
 
 --
--- Các ràng buộc cho bảng `optionmonan`
+-- Constraints for table `nhanviennhapkho`
+--
+ALTER TABLE `nhanviennhapkho`
+  ADD CONSTRAINT `nhanviennhapkho_ibfk_1` FOREIGN KEY (`idNVNK`) REFERENCES `nhanvien` (`id`);
+
+--
+-- Constraints for table `nhanvientuvan`
+--
+ALTER TABLE `nhanvientuvan`
+  ADD CONSTRAINT `nhanvientuvan_ibfk_1` FOREIGN KEY (`idNVTV`) REFERENCES `nhanvien` (`id`);
+
+--
+-- Constraints for table `nhanvienxuli`
+--
+ALTER TABLE `nhanvienxuli`
+  ADD CONSTRAINT `nhanvienxuli_ibfk_1` FOREIGN KEY (`idNVXL`) REFERENCES `nhanvien` (`id`);
+
+--
+-- Constraints for table `nvcotk`
+--
+ALTER TABLE `nvcotk`
+  ADD CONSTRAINT `nvcotk_ibfk_1` FOREIGN KEY (`idNV`) REFERENCES `nhanvien` (`id`);
+
+--
+-- Constraints for table `optionmonan`
 --
 ALTER TABLE `optionmonan`
   ADD CONSTRAINT `optionmonan_ibfk_1` FOREIGN KEY (`idMonAn`) REFERENCES `monan` (`MaMonAn`);
 
 --
--- Các ràng buộc cho bảng `thanhvien`
+-- Constraints for table `qtvcotk`
+--
+ALTER TABLE `qtvcotk`
+  ADD CONSTRAINT `qtvcotk_ibfk_1` FOREIGN KEY (`idQTV`) REFERENCES `quantrivien` (`id`);
+
+--
+-- Constraints for table `thanhvien`
 --
 ALTER TABLE `thanhvien`
   ADD CONSTRAINT `thanhvien_ibfk_1` FOREIGN KEY (`idTV`) REFERENCES `khachhang` (`idKH`);
 
 --
--- Các ràng buộc cho bảng `thongtintinhtrangbanan`
+-- Constraints for table `thongtintinhtrangbanan`
 --
 ALTER TABLE `thongtintinhtrangbanan`
   ADD CONSTRAINT `thongtintinhtrangbanan_ibfk_1` FOREIGN KEY (`MaBanAn`) REFERENCES `banan` (`MaBanAn`),
   ADD CONSTRAINT `thongtintinhtrangbanan_ibfk_2` FOREIGN KEY (`Machinhanh`) REFERENCES `chinhanh` (`machinhanh`);
 
 --
--- Các ràng buộc cho bảng `ttnganhang`
+-- Constraints for table `ttnganhang`
 --
 ALTER TABLE `ttnganhang`
   ADD CONSTRAINT `ttnganhang_ibfk_1` FOREIGN KEY (`MaTTNH`) REFERENCES `phuongthucthanhtoan` (`MaPTTT`);
 
 --
--- Các ràng buộc cho bảng `tttienmat`
+-- Constraints for table `tttienmat`
 --
 ALTER TABLE `tttienmat`
   ADD CONSTRAINT `tttienmat_ibfk_1` FOREIGN KEY (`MaTTTM`) REFERENCES `phuongthucthanhtoan` (`MaPTTT`);
 
 --
--- Các ràng buộc cho bảng `tttindung`
+-- Constraints for table `tttindung`
 --
 ALTER TABLE `tttindung`
   ADD CONSTRAINT `tttindung_ibfk_1` FOREIGN KEY (`MaTD`) REFERENCES `phuongthucthanhtoan` (`MaPTTT`);
 
 --
--- Các ràng buộc cho bảng `tvapdungmgg_dh`
+-- Constraints for table `tvapdungmgg_dh`
 --
 ALTER TABLE `tvapdungmgg_dh`
   ADD CONSTRAINT `tvapdungmgg_dh_ibfk_1` FOREIGN KEY (`idtv`) REFERENCES `thanhvien` (`idTV`),
@@ -818,14 +1041,14 @@ ALTER TABLE `tvapdungmgg_dh`
   ADD CONSTRAINT `tvapdungmgg_dh_ibfk_3` FOREIGN KEY (`MaGiamGia`) REFERENCES `magiamgia` (`MaGiamGia`);
 
 --
--- Các ràng buộc cho bảng `tvcotk`
+-- Constraints for table `tvcotk`
 --
 ALTER TABLE `tvcotk`
   ADD CONSTRAINT `tvcotk_ibfk_1` FOREIGN KEY (`idTK`) REFERENCES `taikhoan` (`id_taikhoan`),
   ADD CONSTRAINT `tvcotk_ibfk_2` FOREIGN KEY (`idTV`) REFERENCES `thanhvien` (`idTV`);
 
 --
--- Các ràng buộc cho bảng `tv_taobl_monan`
+-- Constraints for table `tv_taobl_monan`
 --
 ALTER TABLE `tv_taobl_monan`
   ADD CONSTRAINT `tv_taobl_monan_ibfk_1` FOREIGN KEY (`IDTV`) REFERENCES `thanhvien` (`idTV`),

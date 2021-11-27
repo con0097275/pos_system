@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(isset($_SESSION['admin'])) {
-    header('Location: monan');
+  header("Location:quanlythanhvien");
 } else {
   die("File doesn't exist");
 }

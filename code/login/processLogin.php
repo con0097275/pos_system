@@ -79,7 +79,7 @@ if (isset($_POST['submit_dki'])) {
 
                     //note to update:
                     $message = "<h1>click vào đây để kích hoạt tài khoản tại RYAN POS SYSTEM: <h1><br>"
-                      . "<a href='http://localhost/tutorial/NetBeans/RYAN%20RESTAURANT/login/verify_account.php?vkey=$vkey'> LINK KÍCH HOẠT </a>";
+                      . "<a href='http://ryanrestaurant.com/login/verify_account.php?vkey=$vkey'> LINK KÍCH HOẠT </a>";
                     $headers = "From: noreply.ryanstore@gmail.com";
                     $headers .= "MIME-Version: RYAN RESTAURANT\r\n";             //MỚI
                     $headers .= "Content-type: text/html\r\n";
@@ -138,9 +138,22 @@ if (isset($_POST['submit_dn'])) {
         $pw = $conn->real_escape_string($pw);
 
         //$pw=md5($pw);
-        // Query the database:
+        // Query the database tai khoan khach hang:
         $resultSet1 = $conn->query("SELECT * FROM tvcotk,taikhoan"
                 . " WHERE tvcotk.idTK=taikhoan.id_taikhoan AND taikhoan.email='$em' LIMIT 1");
+        //Query the database tai khoan admin:
+        $resultadmin = $conn->query("SELECT * FROM qtvcotk,taikhoan WHERE qtvcotk.idTK=taikhoan.id_taikhoan AND taikhoan.email='$em' LIMIT 1;");
+        if ($resultadmin->num_rows) {
+            $admin = $resultadmin->fetch_assoc();
+            if (password_verify($pw, $admin['matkhau'])) {
+                // session_start();
+                $_SESSION['admin']=$admin;
+                // quay ve trang admin:
+                header("Location:../admin");
+            }
+        }
+
+
         if ($resultSet1->num_rows) {
             //process login
             $row = $resultSet1->fetch_assoc();
@@ -156,13 +169,14 @@ if (isset($_POST['submit_dn'])) {
                     $temp=$row['idTV'];
                     $resultSet2=$conn->query("SELECT * FROM thanhvien WHERE thanhvien.idTV=$temp");
                     $tv=$resultSet2->fetch_assoc();
-
+                    // var_dump($tv);exit;
                     //start a new session to save the user account info
                     session_start();
                     $_SESSION["idkh"]=$tv['idTV'];
                     $_SESSION["tenthanhvien"]=$tv['Hoten'];
                     $_SESSION["sdt"]=$tv['sdt'];
                     $_SESSION["idtv"]=$tv['idTV'];
+                    $_SESSION['emailtv']=$email;
                     // echo $tv['Hoten'] ."\n".$tv['sdt'] ."\n".$tv['idTV'];
 
                     // quay ve trang chu
