@@ -101,7 +101,7 @@
                 <h2 class="animate__animated animate__fadeInDown"><span>Nhà hàng</span> Ryan </h2>
                 <p class="animate__animated animate__fadeInUp">Mục tiêu và phương châm hàng đầu của chúng tôi là luôn tạo sự hài lòng, cảm giác thoải mái, thư giãn cho khách hàng do vậy mà chúng tôi đã không ngừng đổi mới về cung cách phục vụ, cũng như về chất lượng các món ăn để đáp ứng nhu cầu ngày càng cao của Quý Khách.</p>
                 <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Thực đơn</a>
+                  <a href="../food-ordering/" class="btn-menu animate__animated animate__fadeInUp scrollto">Thực đơn</a>
                   <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Đặt bàn</a>
                 </div>
               </div>
@@ -115,7 +115,7 @@
                 <h2 class="animate__animated animate__fadeInDown">Nhà hàng Ryan</h2>
                 <p class="animate__animated animate__fadeInUp">Mục tiêu và phương châm hàng đầu của chúng tôi là luôn tạo sự hài lòng, cảm giác thoải mái, thư giãn cho khách hàng do vậy mà chúng tôi đã không ngừng đổi mới về cung cách phục vụ, cũng như về chất lượng các món ăn để đáp ứng nhu cầu ngày càng cao của Quý Khách.</p>
                 <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Thực đơn</a>
+                  <a href="../food-ordering/" class="btn-menu animate__animated animate__fadeInUp scrollto">Thực đơn</a>
                   <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Đặt bàn</a>
                 </div>
               </div>
@@ -130,7 +130,7 @@
                 <h2 class="animate__animated animate__fadeInDown">Nhà hàng Ryan</h2>
                 <p class="animate__animated animate__fadeInUp">Mục tiêu và phương châm hàng đầu của chúng tôi là luôn tạo sự hài lòng, cảm giác thoải mái, thư giãn cho khách hàng do vậy mà chúng tôi đã không ngừng đổi mới về cung cách phục vụ, cũng như về chất lượng các món ăn để đáp ứng nhu cầu ngày càng cao của Quý Khách.</p>
                 <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Thực đơn</a>
+                  <a href="../food-ordering/" class="btn-menu animate__animated animate__fadeInUp scrollto">Thực đơn</a>
                   <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Đặt bàn</a>
                 </div>
               </div>
