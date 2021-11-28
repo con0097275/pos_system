@@ -122,7 +122,7 @@ if (!isset($_SESSION['admin'])) {
                                 <th scope="col">Xóa</th>
                               </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="contentTable">
                                 <?php 
                                     require_once("../../requirefile/connect.php");
                                     global $conn;
@@ -214,7 +214,14 @@ if (!isset($_SESSION['admin'])) {
         </div>
       </div>
     <script>
-        
+        $(document).ready(function() {
+            $("#inputSearch").on("keyup", function() {
+                let value = $(this).val().toLowerCase();
+                $("#contentTable tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                });
+            });
+        });
     </script>
 
 </body>
