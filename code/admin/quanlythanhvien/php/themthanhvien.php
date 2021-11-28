@@ -29,9 +29,6 @@ if(isset($_POST['hoten']) && isset($_POST['sdt']) &&isset($_POST['diachi']) && !
     }
     echo $dataout;
 }
-
-
-
 ?>
 <?php 
 //<!--escape special string-->

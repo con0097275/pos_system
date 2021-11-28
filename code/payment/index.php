@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Thanh Toán</title>
+    <title>Ryan thanh Toán</title>
      <!-- Favicons -->
   <link href="../HomePage/assets/img/favicon.png" rel="icon">
   <link href="../HomePage/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -104,7 +104,7 @@
                 </div>
 
                 <div id="btn-payment" class="btn-expand" style="visibility:hidden"></div>
-                <div class="btn-primary btn-expand mb-3" onclick="displayModal()">Thanh toán</div>
+                <div  class="btn-primary btn-expand mb-3" onclick="displayModal()">Thanh toán</div>
 
             </div>
         </div>

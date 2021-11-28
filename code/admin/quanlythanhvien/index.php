@@ -9,10 +9,9 @@ if (!isset($_SESSION['admin'])) {
 <html lang="en">
 
 <head>
-    <title>Admin</title>
+    <title>Quản lý thành viên</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 
     <!-- Favicons -->
     <link href="../../HomePage/assets/img/favicon.png" rel="icon">
@@ -60,21 +59,21 @@ if (!isset($_SESSION['admin'])) {
                 <div class="sidebar" style="position: fixed;">
                     <div class="sidebar-header">Ryan's System</div>
                     <div class="sidebar-wrapper">
-                        <ul class="sidebar-list">
+                    <ul class="sidebar-list">
                             <li class="sidebar-item">
-                                <a href="http://ryanrestaurant.com/admin/quanlythanhvien/" class="sidebar-link active">1. Quản lí thành viên</a>
+                                <a href="../quanlythanhvien/" class="sidebar-link active">1. Quản lí thành viên</a>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">2. Quản lí thông tin đặt bàn</a>
+                                <a href="../quanlydatban/" class="sidebar-link">2. Quản lí thông tin đặt bàn</a>
                             </li>
                             <li class="sidebar-item">
                                 <a href="#" class="sidebar-link">3. Quản lí bình luận, đánh giá</a>
                             </li>
                             <li class="sidebar-item">
-                                <a href="http://ryanrestaurant.com/food-ordering/admin/monan/" class="sidebar-link">4. Quản lí món ăn</a>
+                                <a href="../../food-ordering/admin/monan/" class="sidebar-link">4. Quản lí món ăn</a>
                             </li>
                             <li class="sidebar-item">
-                                <a href="http://ryanrestaurant.com/food-ordering/admin/danhmuc/" class="sidebar-link">5. Quản lí danh mục món ăn</a>
+                                <a href="../../food-ordering/admin/danhmuc/" class="sidebar-link">5. Quản lí danh mục món ăn</a>
                             </li>
                             <li class="sidebar-item">
                                 <a href="#" class="sidebar-link">6. Quản lí hóa đơn</a>
@@ -118,7 +117,7 @@ if (!isset($_SESSION['admin'])) {
                     <th>Thao tác</th>
                 </tr>
             </thead>
-            <tbody id="content">
+            <tbody id="contentTable">
                 <?php 
                 require_once("../../requirefile/connect.php");
                 require_once("../php/functionAdmin.php");
@@ -239,7 +238,7 @@ if (!isset($_SESSION['admin'])) {
         $(document).ready(function() {
             $("#inputSearch").on("keyup", function() {
                 let value = $(this).val().toLowerCase();
-                $("#sensorData tr").filter(function() {
+                $("#contentTable tr").filter(function() {
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
                 });
             });

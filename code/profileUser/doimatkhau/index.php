@@ -77,6 +77,9 @@ if (isset($_POST['doimatkhau']) && !empty($_POST['email']) && !empty($_POST['old
     <a href="../../HomePage"><span style="font-size: 30px;font-weight: 700;color: #fff;margin-left:30px;"><i class="fa fa-chevron-left"></i> Trở về</span></a>
     <h2 class="animate__animated animate__fadeInDown" style="float: right;margin-right:30px;"><span>Nhà hàng</span> Ryan </h2>
   </header>
+
+
+  
   <div id="content" style="height: 500px;padding-top:100px;">
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
       <div class="form-group">
