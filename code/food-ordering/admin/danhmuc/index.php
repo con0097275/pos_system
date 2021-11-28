@@ -158,7 +158,7 @@ require_once('../../funlib/funs.php');
 						'id': id,
 						'action': 'delete'
 					}, function(data) {
-						//location.reload()
+						location.reload();
 					})
 				}
 			</script>
