@@ -66,8 +66,8 @@ if (isset($_GET['flag'])) {
     <!-- include summernote css/js -->
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-    <link href="http://ryanrestaurant.com/admin/css/style.css" rel="stylesheet">
-    <script src="http://ryanrestaurant.com/admin/js/js.js"></script>
+    <link href="../../../admin/css/style.css" rel="stylesheet">
+	<script src="../../../admin/js/js.js"></script>
 </head>
 
 <body>

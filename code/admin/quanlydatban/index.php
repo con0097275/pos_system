@@ -30,8 +30,8 @@ if (!isset($_SESSION['admin'])) {
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <link href="http://ryanrestaurant.com/admin/css/style.css" rel="stylesheet">
-<script src="http://ryanrestaurant.com/admin/js/js.js"></script>
+    <link href="../css/style.css" rel="stylesheet">
+<script src="../js/js.js"></script>
     <style>
         .searchdulieu {
             margin-bottom: 40px;

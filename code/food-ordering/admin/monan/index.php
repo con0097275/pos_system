@@ -23,8 +23,8 @@ require_once('../../funlib/funs.php');
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-	<link href="http://ryanrestaurant.com/admin/css/style.css" rel="stylesheet">
-	<script src="http://ryanrestaurant.com/admin/js/js.js"></script>
+	<link href="../../../admin/css/style.css" rel="stylesheet">
+	<script src="../../../admin/js/js.js"></script>
 	<style>
 		.searchdulieu {
 			margin-bottom: 40px;
@@ -178,7 +178,7 @@ require_once('../../funlib/funs.php');
 				'id': id,
 				'action': 'delete'
 			}, function(data) {
-				location.reload()
+				location.reload();
 			})
 		}
 	</script>
