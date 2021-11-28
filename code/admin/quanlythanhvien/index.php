@@ -250,7 +250,7 @@ if (!isset($_SESSION['admin'])) {
                 }).done(function(data) {
                     if (data) {
                         alert("Xóa thành công");
-                        $('#content').html(data);
+                        $('#contentTable').html(data);
                     }
                 });
             }
@@ -272,7 +272,7 @@ if (!isset($_SESSION['admin'])) {
                     diachi: diachi
                 }).done(function(data) {
                     if (data) {
-                        $('#content').html(data);
+                        $('#contentTable').html(data);
                         alert("Thêm thành công.");
                     }
                     $("#closeModalInsert").click();
@@ -290,7 +290,7 @@ if (!isset($_SESSION['admin'])) {
                     diachi: diachi
                 }).done(function(data) {
                     if (data) {
-                        $('#content').html(data);
+                        $('#contentTable').html(data);
                         alert("Sửa thành công.");
                     }
                     $("#closeModalEdit").click();
